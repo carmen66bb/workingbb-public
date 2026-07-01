@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>膳食种草品牌商家 · 三段式飞轮方法论 · 对客分享版</title>
+<style>
+body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; color: #2c3e50; background: #fafafa; }
+h1 { color: #1a1a2e; border-bottom: 3px solid #E63946; padding-bottom: 10px; }
+h2 { color: #1d4e89; border-left: 5px solid #1d4e89; padding-left: 12px; margin-top: 40px; background: #f0f5fa; padding: 10px 12px; }
+h3 { color: #06A77D; margin-top: 24px; }
+h4 { color: #555; margin: 8px 0; }
+.cover { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 30px; }
+.cover h1 { color: white; border: none; font-size: 26px; margin-bottom: 8px; }
+.cover .sub { font-size: 14px; opacity: 0.9; }
+.gold { background: linear-gradient(135deg, #fff8dc 0%, #ffeaa7 100%); border: 2px solid #fdcb6e; padding: 20px; border-radius: 8px; margin: 20px 0; }
+.gold h3 { color: #d63031; margin-top: 0; }
+.gold p { font-size: 17px; line-height: 1.7; margin: 12px 0; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+th, td { padding: 8px 12px; border: 1px solid #ddd; text-align: left; vertical-align: top; }
+th { background: #1d4e89; color: white; }
+tr:nth-child(even) { background: #f8f9fa; }
+.hl { background: #fff8e1 !important; font-weight: bold; }
+.section { background: white; padding: 20px; border-radius: 8px; margin: 16px 0; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.flywheel { background: linear-gradient(135deg, #1d4e89 0%, #06A77D 100%); color: white; padding: 24px; border-radius: 12px; margin: 16px 0; }
+.flywheel h3 { color: #ffeaa7; }
+.flywheel h4 { color: white; }
+.flywheel-step { background: rgba(255,255,255,0.15); padding: 16px; border-radius: 8px; margin: 14px 0; border-left: 4px solid #fdcb6e; display: flex; gap: 18px; align-items: flex-start; }
+.flywheel-step b { color: #ffeaa7; }
+.flywheel-step .step-text { flex: 1; min-width: 0; }
+.flywheel-step .step-img { flex: 0 0 260px; text-align: center; }
+.flywheel-step .step-img .img-placeholder { background: rgba(255,255,255,0.08); border: 2px dashed rgba(255,255,255,0.4); border-radius: 8px; padding: 50px 12px; color: #ffeaa7; font-size: 12px; line-height: 1.6; }
+.flywheel-step .core-action { background: rgba(255,255,255,0.18); padding: 10px 14px; border-radius: 6px; margin-top: 10px; border-left: 3px solid #ffeaa7; }
+.flywheel-step .core-action b { color: #ffeaa7; }
+@media (max-width: 768px) { .flywheel-step { flex-direction: column; } .flywheel-step .step-img { flex: 1; } }
+ol li, ul li { margin: 6px 0; line-height: 1.6; }
+.note { font-size: 12px; color: #888; font-style: italic; }
+.takeaway { background: #f0fef4; padding: 16px 20px; border-radius: 8px; border-left: 5px solid #06A77D; margin: 16px 0; }
+.takeaway h4 { color: #06A77D; margin-top: 0; }
+.redline { background: #fff5f5; padding: 12px 18px; border-radius: 6px; border-left: 4px solid #E63946; margin: 12px 0; color: #c0392b; font-size: 13px; }
+/* 友商达人数据脱敏散点图样式 */
+.scatter-lead { background: #f0f7ff; border-left: 4px solid #1565c0; padding: 14px 18px; border-radius: 6px; margin-bottom: 18px; font-size: 13px; line-height: 1.8; color: #0d47a1; }
+.scatter-wrap { background: #fafafa; border: 1px solid #e5e5ea; border-radius: 12px; padding: 18px; margin: 12px 0; }
+.scatter-title { font-size: 13px; font-weight: 600; color: #1d1d1f; margin-bottom: 4px; }
+.scatter-sub { font-size: 11px; color: #86868b; margin-bottom: 10px; }
+.scatter-zone-bg { opacity: 0.08; }
+.scatter-grid { stroke: #d0d0d5; stroke-width: 1; stroke-dasharray: 2 2; }
+.scatter-zone-label { font-size: 10px; font-weight: 600; opacity: 0.7; }
+.scatter-axis-label { font-size: 10px; fill: #86868b; }
+.scatter-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; padding: 10px 12px; background: white; border-radius: 8px; font-size: 11px; color: #555; }
+.scatter-legend .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+.insight-box { background: linear-gradient(135deg, #fff8e1, #fffde7); border-left: 4px solid #f9a825; padding: 14px 18px; border-radius: 6px; margin: 18px 0; }
+.insight-title { font-size: 13px; font-weight: 700; color: #b45309; margin-bottom: 6px; }
+.insight-content { font-size: 13px; line-height: 1.8; color: #1d1d1f; }
+.legend-table { width: 100%; border-collapse: collapse; margin-top: 18px; font-size: 12px; background: white; }
+.legend-table th, .legend-table td { padding: 8px 12px; border: 1px solid #e5e5ea; text-align: left; }
+.legend-table th { background: #f5f5f7; font-weight: 600; color: #1d1d1f; }
+.legend-table td.tier-s { background: #e8f5e9; color: #1b5e20; font-weight: 600; }
+.legend-table td.tier-a { background: #e3f2fd; color: #0d47a1; font-weight: 600; }
+.legend-table td.tier-b { background: #fff8e1; color: #b45309; font-weight: 600; }
+.legend-table td.tier-c { background: #fff3e0; color: #c25e00; font-weight: 600; }
+.legend-table td.tier-h { background: #f5f5f7; color: #6b7280; font-weight: 600; }
+.scatter-footer-note { font-size: 11px; color: #86868b; padding: 12px 16px; text-align: center; background: #f5f5f7; line-height: 1.7; border-radius: 6px; margin-top: 14px; }
+</style>
+</head>
+<body>
+
+<!-- 封面 -->
+<div class="cover">
+    <h1>膳食种草品牌商家 · 三段式飞轮方法论</h1>
+    <div class="sub">对客分享版 ｜ 2026/06/30 下午 ｜ 分享方：腾讯营销 食品饮料中心 · 膳食行业 ｜ 适用：华大营养 99 品牌日筹备</div>
+</div>
+
+<!-- ========== 为什么是这套方法论 ========== -->
+<h2>1 · 为什么值得分享这套方法论</h2>
+
+<div class="gold">
+    <h3>💎 头部 4 家都跑通了 GMV，但只有这家跑出"种草 + 自营直播间"耦合飞轮</h3>
+    <p>过去半年，我们手上的膳食赛道头部品牌里——有的全靠达播带货（达人自己卖）、有的零达人纯自营、有的临近大促才铺达人。</p>
+    <p>只有 <b>"膳食种草品牌商家"</b> 跑出了一条 <b>"种草前置 → 素材加热预约 → 双钩闭环"</b> 的完整飞轮。</p>
+    <p>🌱 <b>关键价值：这套方法论是品类无关的。</b>益生菌跑得通，叶黄素、GABA、护眼、体重管理、骨骼营养、脑营养同样能跑通。<b>商家的种草动作可以横向复制到各个品类</b>——平台层面把这套打法标准化，每家头部都能拿这个抓手撬大场一造节。</p>
+    <p style="font-size:18px;color:#d63031;"><b>这是 Q3 唯一值得"举全行业之力深度复制"的稀缺模式。今天分享给华大，希望对 99 品牌日的筹备有启发。</b></p>
+</div>
+
+<!-- ========== 三段式飞轮 ========== -->
+<h2>2 · 三段式飞轮（实战拆解 · 品类无关方法论）</h2>
+
+<div class="flywheel">
+    <h3>🔥 三段式飞轮 · 把"种草投入"变成"大促爆发"的完整闭环</h3>
+
+    <div class="flywheel-step">
+        <div class="step-text">
+            <h4>第一段：先头部立调性，再腰尾部放大（用 4 个月养出"内容母版"）</h4>
+            <p>很多人误解"种草前置 4 个月"=先用腰尾部铺量测潜力。<b>这家品牌真实的节奏正好相反</b>——</p>
+            <ul>
+                <li><b>T-16 ~ T-12 周（最前置）</b>：<b>重金砸 1-2 个"调性锚点"</b>——知识 IP / 央媒官号 / 高净值女性向头部，把品牌调性立住</li>
+                <li><b>T-12 ~ T-6 周（中段）</b>：腰部达人接着拆解头部内容、做场景化二次创作（同一头部可<b>跨品类反复复用</b>，单达人能跨 3 个商品产生 260 万+ 累计观看）</li>
+                <li><b>T-6 ~ T-2 周（密集铺量）</b>：腰尾部密集铺设 + 央媒官号背书 + 性价比试水达人</li>
+                <li><b>T-2 ~ T-1 周（收口）</b>：中老年女性向主持人 / 时评类达人收口知性人群</li>
+            </ul>
+            <div class="core-action">
+                <b>核心动作：</b>不是"撒网式测潜力"，而是<b>"先用 1-2 条头部内容立调性，把它变成 4 个月可反复加热的'内容母版'"</b>——<br>
+                调性锚点跑出来后，腰尾部不是去"重新测潜力"，而是<b>"按头部已经跑通的内容方向做拆解、放大、扩人群"</b>。<br>
+                这是为什么 H1 总投入约 160 万就能撬动大促日 ADQ 单日数倍爆发的真实原因——<b>不是钱多，是节奏对</b>。
+            </div>
+        </div>
+        <div class="step-img">
+            <img src="飞轮配图/flywheel-1-罗振宇种草.png" alt="头部知识 IP 种草视频" style="width:100%;max-width:260px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.3);display:block;margin:0 auto;">
+            <div style="font-size:11px;color:#ffeaa7;margin-top:8px;line-height:1.5;text-align:center;opacity:0.9;">
+                <b>头部知识 IP 长视频</b><br>
+                "溯源身体的长期主益"<br>
+                <span style="opacity:0.7">视频号 · 14 分钟深度内容 · 跑 4 个月长尾</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 自制 SVG 节奏甘特图 -->
+    <div style="background:rgba(255,255,255,0.12);padding:18px;border-radius:8px;margin:14px 0;">
+        <h4 style="color:#ffeaa7;margin-top:0;">📊 H1 真实投放节奏可视化（按双周聚合 · 头部/腰部/尾部叠加）</h4>
+        <div style="background:white;padding:16px;border-radius:6px;">
+            <svg viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:-apple-system,'PingFang SC',sans-serif;">
+                <!-- 标题 -->
+                <text x="450" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a2e">大场前 4-5 个月节奏：头部立调性（2 月）→ 腰尾部放大（3-5 月）→ 收口爆发（6 月）</text>
+
+                <!-- 坐标轴 -->
+                <line x1="60" y1="220" x2="860" y2="220" stroke="#333" stroke-width="1.5"/>
+                <line x1="60" y1="40" x2="60" y2="220" stroke="#333" stroke-width="1.5"/>
+
+                <!-- Y 轴刻度 -->
+                <text x="55" y="223" text-anchor="end" font-size="10" fill="#666">0</text>
+                <text x="55" y="183" text-anchor="end" font-size="10" fill="#666">20万</text>
+                <text x="55" y="143" text-anchor="end" font-size="10" fill="#666">40万</text>
+                <text x="55" y="103" text-anchor="end" font-size="10" fill="#666">60万</text>
+                <text x="55" y="63" text-anchor="end" font-size="10" fill="#666">投放金额</text>
+                <line x1="60" y1="180" x2="860" y2="180" stroke="#eee" stroke-dasharray="3,3"/>
+                <line x1="60" y1="140" x2="860" y2="140" stroke="#eee" stroke-dasharray="3,3"/>
+                <line x1="60" y1="100" x2="860" y2="100" stroke="#eee" stroke-dasharray="3,3"/>
+
+                <!-- 柱子（每条柱按头/腰/尾叠加，宽 50，间距 80） -->
+                <!-- 1月下：5.5万（腰4.4+尾1.1） -->
+                <g><rect x="75" y="211" width="50" height="9" fill="#fdcb6e"/><rect x="75" y="209" width="50" height="2" fill="#a0a0a0"/><text x="100" y="235" text-anchor="middle" font-size="9" fill="#555">1/18</text><text x="100" y="248" text-anchor="middle" font-size="9" fill="#555">5.5万</text></g>
+                <!-- 2月上：8.4万（头8.4） -->
+                <g><rect x="155" y="203" width="50" height="17" fill="#e63946"/><text x="180" y="235" text-anchor="middle" font-size="9" fill="#555">2/1</text><text x="180" y="248" text-anchor="middle" font-size="9" fill="#555">8.4万</text></g>
+                <!-- 2月中下：56.7万（头54.6+腰0+尾2.1）—— H1 最高峰 -->
+                <g><rect x="235" y="107" width="50" height="113" fill="#e63946"/><rect x="235" y="105" width="50" height="2" fill="#a0a0a0"/><text x="260" y="235" text-anchor="middle" font-size="9" fill="#555">2/15</text><text x="260" y="248" text-anchor="middle" font-size="9" fill="#c62828" font-weight="bold">56.7万 🔥</text><text x="260" y="100" text-anchor="middle" font-size="10" fill="#c62828" font-weight="bold">调性锚点</text></g>
+                <!-- 3月：低谷 7.3万（腰5.2+尾2.1） -->
+                <g><rect x="315" y="206" width="50" height="14" fill="#fdcb6e"/><rect x="315" y="202" width="50" height="4" fill="#a0a0a0"/><text x="340" y="235" text-anchor="middle" font-size="9" fill="#555">3/15</text><text x="340" y="248" text-anchor="middle" font-size="9" fill="#555">7.3万</text></g>
+                <!-- 3/29-4/11：14万（头8.4+腰0+尾5.6） -->
+                <g><rect x="395" y="203" width="50" height="17" fill="#e63946"/><rect x="395" y="192" width="50" height="11" fill="#a0a0a0"/><text x="420" y="235" text-anchor="middle" font-size="9" fill="#555">3/29</text><text x="420" y="248" text-anchor="middle" font-size="9" fill="#555">14万</text></g>
+                <!-- 4/26-5/9：17万（头12.6+腰0+尾4.4） -->
+                <g><rect x="475" y="195" width="50" height="25" fill="#e63946"/><rect x="475" y="186" width="50" height="9" fill="#a0a0a0"/><text x="500" y="235" text-anchor="middle" font-size="9" fill="#555">4/26</text><text x="500" y="248" text-anchor="middle" font-size="9" fill="#555">17万</text></g>
+                <!-- 5/10-5/23：22.1万（头16.8+腰4.2+尾1.1） -->
+                <g><rect x="555" y="186" width="50" height="34" fill="#e63946"/><rect x="555" y="178" width="50" height="8" fill="#fdcb6e"/><rect x="555" y="176" width="50" height="2" fill="#a0a0a0"/><text x="580" y="235" text-anchor="middle" font-size="9" fill="#555">5/10</text><text x="580" y="248" text-anchor="middle" font-size="9" fill="#555">22.1万</text></g>
+                <!-- 5/24-6/6：17.1万（头0+腰17.1） -->
+                <g><rect x="635" y="186" width="50" height="34" fill="#fdcb6e"/><text x="660" y="235" text-anchor="middle" font-size="9" fill="#555">5/24</text><text x="660" y="248" text-anchor="middle" font-size="9" fill="#555">17.1万</text><text x="660" y="180" text-anchor="middle" font-size="10" fill="#d68910" font-weight="bold">腰部放大</text></g>
+                <!-- 6/7-6/20：16万（头8.4+腰4.2+尾3.4） -->
+                <g><rect x="715" y="203" width="50" height="17" fill="#e63946"/><rect x="715" y="195" width="50" height="8" fill="#fdcb6e"/><rect x="715" y="188" width="50" height="7" fill="#a0a0a0"/><text x="740" y="235" text-anchor="middle" font-size="9" fill="#555">6/7</text><text x="740" y="248" text-anchor="middle" font-size="9" fill="#c62828" font-weight="bold">16万 直播钩</text></g>
+                <!-- 6/21+：2.8万（尾） -->
+                <g><rect x="795" y="215" width="50" height="5" fill="#a0a0a0"/><text x="820" y="235" text-anchor="middle" font-size="9" fill="#555">6/21</text><text x="820" y="248" text-anchor="middle" font-size="9" fill="#555">2.8万</text></g>
+
+                <!-- 阶段分隔 -->
+                <line x1="290" y1="40" x2="290" y2="220" stroke="#06A77D" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+                <line x1="610" y1="40" x2="610" y2="220" stroke="#06A77D" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+                <text x="175" y="55" text-anchor="middle" font-size="11" fill="#06A77D" font-weight="bold">① 头部立调性（1-2月）</text>
+                <text x="175" y="68" text-anchor="middle" font-size="10" fill="#06A77D">≈40% H1 预算</text>
+                <text x="450" y="55" text-anchor="middle" font-size="11" fill="#06A77D" font-weight="bold">② 腰尾放大 + 跨品类复用（3-5月）</text>
+                <text x="450" y="68" text-anchor="middle" font-size="10" fill="#06A77D">同一头部跨多品类</text>
+                <text x="735" y="55" text-anchor="middle" font-size="11" fill="#06A77D" font-weight="bold">③ 大促前收口（6月）</text>
+                <text x="735" y="68" text-anchor="middle" font-size="10" fill="#06A77D">直播预约钩子</text>
+
+                <!-- 图例 -->
+                <g transform="translate(60, 265)">
+                    <rect x="0" y="-9" width="14" height="10" fill="#e63946"/><text x="18" y="0" font-size="11" fill="#333">头部达人 ≥8万/单条</text>
+                    <rect x="180" y="-9" width="14" height="10" fill="#fdcb6e"/><text x="198" y="0" font-size="11" fill="#333">腰部达人 3-8万/单条</text>
+                    <rect x="360" y="-9" width="14" height="10" fill="#a0a0a0"/><text x="378" y="0" font-size="11" fill="#333">尾部达人 &lt;3万/单条</text>
+                    <text x="540" y="0" font-size="11" fill="#c62828" font-weight="bold">🔥 = 单期重金布局点</text>
+                </g>
+            </svg>
+        </div>
+        <p style="font-size:13px;color:#ffeaa7;margin:10px 0 0;line-height:1.6;">
+            <b>三个关键事实：</b>① 2 月单月就投入约 40% 的 H1 预算砸头部立调性 ② 3-5 月 <b>同一头部达人跨 3 个品类反复复用</b>（程雷类）摊薄成本 ③ 大促前 4 周才出现"腰部放大"密集铺设 ④ 6/15 直播预约钩子是大促当日爆发的真正引信
+        </p>
+    </div>
+
+    <div class="flywheel-step">
+        <div class="step-text">
+            <h4>第二段：素材加热 × 直播预约组件（蓄水预约用户池）</h4>
+            <ul>
+                <li>对跑赢的爆款素材<b>大量加热</b>（ADQ 投流）——不是把所有素材平均加热，而是"赢者通吃"</li>
+                <li>素材统一挂上<b>直播预约组件</b>——不是直接卖货跳商详</li>
+                <li>把"短视频曝光流量"沉淀为<b>"直播预约用户池"</b>，在大促前蓄满</li>
+                <li>加热预算和素材的"种草潜力测试结果"挂钩——跑赢的素材加 3-5 倍预算，跑输的素材立刻关停</li>
+            </ul>
+            <div class="core-action">
+                <b>核心动作：</b>种草不直接转化，而是<b>"种草 → 预约 → 等大促直播间放量"</b>。<br>
+                把短视频流量延期到大促日集中爆发——大促当天直播间不靠"现场抓人"，而靠<b>"提前 1 个月蓄好的预约池在那天集中召回"</b>。
+            </div>
+        </div>
+        <div class="step-img">
+            <img src="飞轮配图/flywheel-2-直播预约组件.jpg" alt="直播预约组件落地页" style="width:100%;max-width:260px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.3);display:block;margin:0 auto;">
+            <div style="font-size:11px;color:#ffeaa7;margin-top:8px;line-height:1.5;text-align:center;opacity:0.9;">
+                <b>直播预约组件落地页</b><br>
+                短视频流量沉淀为预约用户池<br>
+                <span style="opacity:0.7">"立即预约"挂载到爆款素材底部</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="flywheel-step">
+        <div class="step-text">
+            <h4>第三段：达人进品牌直播间售卖（大促当天集中爆发）</h4>
+            <ul>
+                <li><b>自营钩</b>：明星/头部达人进自家品牌直播间——达人不是带粉离场，而是<b>带粉进品牌直播间一起卖</b></li>
+                <li><b>达播钩</b>：把货给视频号头部混场达人做达播测试——单场可跑出几百万级 GMV</li>
+                <li>预约用户回流 + 达人本人在线 + 平台流量 = <b>大促当天 ADQ 单日爆发数倍于日常</b></li>
+                <li>归因可追踪——预约组件回流路径清晰，能识别"种草哪条素材沉淀的用户"</li>
+            </ul>
+            <div class="core-action">
+                <b>核心动作：</b>把"达人种草 → 自家直播间"做成<b>完整闭环</b>——双钩并行（明星进自家直播间 + 货给头部达播达人混场卖），<br>
+                大促当天用"自营 + 达播"两条腿打爆。归因数据反过来又喂回第一段——下一轮哪些达人值得续投、哪些该砍，下次大促有数据可用。
+            </div>
+        </div>
+        <div class="step-img" style="flex:0 0 320px;">
+            <div style="display:flex;gap:8px;">
+                <div style="flex:1;">
+                    <img src="飞轮配图/flywheel-3a-陈松伶进直播间.png" alt="明星空降品牌直播间" style="width:100%;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.3);display:block;">
+                    <div style="font-size:10px;color:#ffeaa7;margin-top:6px;line-height:1.4;text-align:center;">
+                        <b>自营钩</b><br>
+                        明星空降品牌自营直播间<br>
+                        <span style="opacity:0.7">大场当日 1-2 小时坐镇</span>
+                    </div>
+                </div>
+                <div style="flex:1;">
+                    <img src="飞轮配图/flywheel-3b-馋嘴汇头部混场.jpg" alt="头部达播混场" style="width:100%;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.3);display:block;">
+                    <div style="font-size:10px;color:#ffeaa7;margin-top:6px;line-height:1.4;text-align:center;">
+                        <b>达播钩</b><br>
+                        货给视频号头部混场达人<br>
+                        <span style="opacity:0.7">单场可跑百万级 GMV</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ========== 友商实证数据 · 脱敏散点图 ========== -->
+<h2>2.5 · 友商实证数据 · 31 条达人视频的分布结构（脱敏版）</h2>
+
+<div class="section">
+
+<div class="scatter-lead">
+上面三段式飞轮是<strong>方法论框架</strong>，这一节给一组<strong>同行业头部品牌真实数据</strong>验证——他们 H1 用 31 条达人视频跑出来的分布形态，气泡的位置（CPM × 投入金额）、大小（观看量）、颜色（CPM 梯队）均为真实数据脱敏版，<strong>达人名字已隐去</strong>（用梯队 + 编号代表），用作华大 99 达人选号的"分布结构参考"。
+</div>
+
+<div class="scatter-title" style="font-size:15px;font-weight:700;margin-top:8px;">⭐ 友商 H1 达人星图 · 一图看完 31 条视频的分布结构</div>
+<div class="scatter-sub">X 轴：单条 CPM（元）｜ Y 轴：投入金额（元）｜ 气泡大小：观看量</div>
+
+<div class="scatter-wrap">
+<div class="scatter-title">31 条视频在「CPM × 投入金额」上的分布</div>
+<div class="scatter-sub">象限解读：左下=性价比之王 ｜ 左上=高投入高回报 ｜ 右下=低投入但效率差 ｜ 右上=最需复盘</div>
+
+<svg viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto;">
+  <!-- 背景四象限 -->
+  <rect x="60" y="20" width="350" height="190" fill="#06A77D" class="scatter-zone-bg"/>
+  <rect x="410" y="20" width="330" height="190" fill="#1565c0" class="scatter-zone-bg"/>
+  <rect x="60" y="210" width="350" height="190" fill="#f9a825" class="scatter-zone-bg"/>
+  <rect x="410" y="210" width="330" height="190" fill="#E63946" class="scatter-zone-bg"/>
+
+  <!-- 网格线 -->
+  <line x1="60" y1="20" x2="60" y2="400" class="scatter-grid"/>
+  <line x1="60" y1="400" x2="740" y2="400" class="scatter-grid"/>
+  <line x1="60" y1="210" x2="740" y2="210" stroke="#c0c0c5" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="410" y1="20" x2="410" y2="400" stroke="#c0c0c5" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 象限标注 -->
+  <text x="80" y="40" class="scatter-zone-label" fill="#2e7d32">⭐ 高性价比高投入</text>
+  <text x="430" y="40" class="scatter-zone-label" fill="#0d47a1">🟡 投入大需校验</text>
+  <text x="80" y="395" class="scatter-zone-label" fill="#ef6c00">✅ 性价比之王</text>
+  <text x="430" y="395" class="scatter-zone-label" fill="#c62828">🔴 必须复盘归因</text>
+
+  <!-- Y 轴刻度 -->
+  <text x="55" y="404" text-anchor="end" class="scatter-axis-label">0</text>
+  <text x="55" y="306" text-anchor="end" class="scatter-axis-label">10w</text>
+  <text x="55" y="214" text-anchor="end" class="scatter-axis-label">20w</text>
+  <text x="55" y="116" text-anchor="end" class="scatter-axis-label">30w</text>
+  <text x="55" y="24" text-anchor="end" class="scatter-axis-label">42w</text>
+
+  <!-- X 轴刻度 -->
+  <text x="60" y="418" text-anchor="middle" class="scatter-axis-label">0</text>
+  <text x="148" y="418" text-anchor="middle" class="scatter-axis-label">100</text>
+  <text x="237" y="418" text-anchor="middle" class="scatter-axis-label">200</text>
+  <text x="325" y="418" text-anchor="middle" class="scatter-axis-label">500</text>
+  <text x="410" y="418" text-anchor="middle" class="scatter-axis-label">1000</text>
+  <text x="568" y="418" text-anchor="middle" class="scatter-axis-label">5000</text>
+  <text x="730" y="418" text-anchor="middle" class="scatter-axis-label">12500+</text>
+
+  <!-- 轴标题 -->
+  <text x="400" y="445" text-anchor="middle" font-size="12" font-weight="600" fill="#1d1d1f">CPM（元）</text>
+  <text x="20" y="220" text-anchor="middle" font-size="12" font-weight="600" fill="#1d1d1f" transform="rotate(-90 20 220)">投入金额</text>
+
+  <!-- S 级（绿）· CPM < 100 · 7 条 -->
+  <circle cx="65" cy="396" r="9" fill="#06A77D" opacity="0.75"/><text x="65" y="382" text-anchor="middle" font-size="9" fill="#2e7d32">S1</text>
+  <circle cx="74" cy="396" r="12" fill="#06A77D" opacity="0.75"/><text x="74" y="412" text-anchor="middle" font-size="9" fill="#2e7d32">S2</text>
+  <circle cx="85" cy="376" r="16" fill="#06A77D" opacity="0.75"/><text x="100" y="370" font-size="9" fill="#2e7d32">S3</text>
+  <circle cx="95" cy="394" r="11" fill="#06A77D" opacity="0.75"/><text x="115" y="394" font-size="9" fill="#2e7d32">S4</text>
+  <circle cx="115" cy="395" r="8" fill="#06A77D" opacity="0.75"/><text x="135" y="395" font-size="9" fill="#2e7d32">S5</text>
+  <circle cx="138" cy="318" r="22" fill="#06A77D" opacity="0.85" stroke="#1b5e20" stroke-width="2"/><text x="138" y="290" text-anchor="middle" font-size="10" fill="#1b5e20" font-weight="700">⭐S6（核心压舱石）</text>
+  <circle cx="145" cy="361" r="13" fill="#06A77D" opacity="0.75"/><text x="170" y="361" font-size="9" fill="#2e7d32">S7</text>
+
+  <!-- A 级（蓝）· CPM 100-200 · 3 条 -->
+  <circle cx="158" cy="362" r="13" fill="#1565c0" opacity="0.75"/><text x="180" y="370" font-size="9" fill="#0d47a1">A1</text>
+  <circle cx="240" cy="318" r="15" fill="#1565c0" opacity="0.75"/><text x="260" y="318" font-size="9" fill="#0d47a1">A2</text>
+  <circle cx="250" cy="350" r="13" fill="#1565c0" opacity="0.75"/><text x="270" y="345" font-size="9" fill="#0d47a1">A3</text>
+
+  <!-- B 级（橙）· CPM 200-500 · 10 条 -->
+  <circle cx="265" cy="376" r="10" fill="#f9a825" opacity="0.75"/><text x="290" y="376" font-size="9" fill="#ef6c00">B1</text>
+  <circle cx="285" cy="358" r="11" fill="#f9a825" opacity="0.75"/><text x="310" y="358" font-size="9" fill="#ef6c00">B2</text>
+  <circle cx="295" cy="394" r="7" fill="#f9a825" opacity="0.75"/><text x="295" y="410" text-anchor="middle" font-size="9" fill="#ef6c00">B3</text>
+  <circle cx="305" cy="354" r="11" fill="#f9a825" opacity="0.75"/><text x="330" y="350" font-size="9" fill="#ef6c00">B4</text>
+  <circle cx="315" cy="390" r="9" fill="#f9a825" opacity="0.75"/><text x="315" y="408" text-anchor="middle" font-size="9" fill="#ef6c00">B5</text>
+  <circle cx="325" cy="290" r="17" fill="#f9a825" opacity="0.75"/><text x="350" y="285" font-size="9" fill="#ef6c00">B6</text>
+  <circle cx="335" cy="290" r="17" fill="#f9a825" opacity="0.75"/><text x="360" y="298" font-size="9" fill="#ef6c00">B7</text>
+  <circle cx="365" cy="80" r="24" fill="#f9a825" opacity="0.85" stroke="#b45309" stroke-width="2"/><text x="365" y="50" text-anchor="middle" font-size="10" fill="#b45309" font-weight="700">⭐B8（央媒背书锚点）</text>
+  <circle cx="345" cy="360" r="10" fill="#f9a825" opacity="0.75"/><text x="370" y="362" font-size="9" fill="#ef6c00">B9</text>
+
+  <!-- C 级（深橙）· CPM 500-3000 · 3 条 -->
+  <circle cx="440" cy="318" r="11" fill="#ef6c00" opacity="0.78" stroke="#c25e00" stroke-width="1"/><text x="465" y="320" font-size="9" fill="#c25e00">C1</text>
+  <circle cx="475" cy="360" r="8" fill="#ef6c00" opacity="0.78" stroke="#c25e00" stroke-width="1"/><text x="500" y="362" font-size="9" fill="#c25e00">C2</text>
+  <circle cx="475" cy="394" r="5" fill="#ef6c00" opacity="0.78" stroke="#c25e00" stroke-width="1"/><text x="500" y="395" font-size="9" fill="#c25e00">C3</text>
+
+  <!-- 高客单段（灰）· CPM > 3000 · 3 条 -->
+  <circle cx="565" cy="378" r="7" fill="#9ca3af" opacity="0.7"/><text x="588" y="378" font-size="9" fill="#6b7280">H1</text>
+  <circle cx="595" cy="240" r="13" fill="#9ca3af" opacity="0.75"/><text x="618" y="240" font-size="9" fill="#6b7280">H2</text>
+  <circle cx="725" cy="378" r="5" fill="#9ca3af" opacity="0.7"/><text x="708" y="368" font-size="9" fill="#6b7280">H3</text>
+</svg>
+
+<div class="scatter-legend">
+<span><span class="dot" style="background: #06A77D;"></span>S 级（CPM &lt; 100）· 7 条</span>
+<span><span class="dot" style="background: #1565c0;"></span>A 级（100-200）· 3 条</span>
+<span><span class="dot" style="background: #f9a825;"></span>B 级（200-500）· 9 条</span>
+<span><span class="dot" style="background: #ef6c00;"></span>C 级（500-3000）· 3 条</span>
+<span><span class="dot" style="background: #9ca3af;"></span>高客单段（&gt;3000，含品牌背书价值）· 3 条</span>
+<span style="margin-left: 8px;">💡 气泡大小 ∝ 观看量</span>
+</div>
+</div>
+
+<div class="insight-box">
+<div class="insight-title">⚡ 友商达人布局的三个关键信号</div>
+<div class="insight-content">
+<b>① 左下密集（S 级 7 条 + B 级 9 条的低投入区）</b>：H1 投入小但效果好的腰部金矿——同行业头部品牌把<strong>大量 CPM &lt; 200 元的腰部达人作为基础盘</strong>，撒网 + 测潜力。<br>
+<b>② 左上凸起（⭐ S6 + ⭐ B8）</b>：两个"重金锚点"——一个高性价比头部（S6，CPM&lt;100 但投入接近 10 万）+ 一个央媒背书型高 GMV 锚点（B8，单条投入 42 万）。<br>
+<b>③ 右下右上分散（C 级 + 高客单段）</b>：高 CPM 区单条投入克制（多数 &lt; 10 万），<strong>高客单达人不撒网</strong>，只挑 2-3 个调性差异化的人选试水。
+</div>
+</div>
+
+<h3 style="margin-top:24px;">📐 友商 H1 达人布局结构（梯队拆解）</h3>
+<div class="scatter-sub">从结构形态看，这家品牌怎么分配 31 条视频的预算与人选</div>
+
+<table class="legend-table">
+<thead>
+<tr><th>梯队</th><th>CPM 区间</th><th>视频数</th><th>占比</th><th>典型分布形态</th><th>对华大的参考意义</th></tr>
+</thead>
+<tbody>
+<tr><td class="tier-s">S 级</td><td>&lt; 100 元</td><td>7 条</td><td>22.6%</td><td>左下密集 + 1 个左上凸起（S6 核心压舱石）</td><td>头部 + 腰部金矿的<strong>基础盘</strong>，性价比之王 + 长期复用</td></tr>
+<tr><td class="tier-a">A 级</td><td>100-200 元</td><td>3 条</td><td>9.7%</td><td>左下偏左中段</td><td>性价比型腰部，<strong>测潜力首选</strong></td></tr>
+<tr><td class="tier-b">B 级</td><td>200-500 元</td><td>9 条</td><td>29.0%</td><td>密集分布 + 1 个最高凸起（B8 央媒背书）</td><td>主力放量区 + 1 个超头部背书锚点</td></tr>
+<tr><td class="tier-c">C 级</td><td>500-3000 元</td><td>3 条</td><td>9.7%</td><td>右下偏左，单条投入克制</td><td>差异化人选试水，<strong>不撒网</strong></td></tr>
+<tr><td class="tier-h">高客单段</td><td>&gt; 3000 元</td><td>3 条</td><td>9.7%</td><td>右半象限稀疏</td><td>调性背书型，单条投入&lt;15 万即可</td></tr>
+<tr style="background: #fafafa; font-weight: 700;"><td colspan="2">合计</td><td>25 条主力 + 6 条试水</td><td>—</td><td>左下密集 + 一两个高凸起锚点</td><td><strong>"主力低 CPM 撒网 + 1-2 个重金锚点"双层结构</strong></td></tr>
+</tbody>
+</table>
+
+<div class="insight-box" style="background: linear-gradient(135deg, #e3f2fd, #f0f7ff); border-left-color: #1565c0; margin-top: 24px;">
+<div class="insight-title" style="color: #0d47a1;">💡 友商打法 → 华大 99 可借鉴的三个动作</div>
+<div class="insight-content">
+<b>动作 1 · 基础盘建议</b>：S 级（CPM&lt;100）+ A 级（100-200）合计 10 条占比 32%，是<strong>低成本撒网测潜力</strong>的核心区——华大 99 可参考此比例做"腰部金矿试水池"<br>
+<b>动作 2 · 锚点投入建议</b>：1-2 个"重金锚点"集中拉投入到 30-42 万级（央媒/高调性头部），其余 25-30 条视频单条 &lt; 10 万——华大 99 200 万预算可参照"重金 1-2 锚点 + 腰部撒网"结构<br>
+<b>动作 3 · 高客单达人克制</b>：CPM&gt;500 的高客单段总共只占 6 条（19.4%），且单条投入都 &lt; 15 万——告诉客户<strong>"贵的不一定 ALL IN"</strong>，重点是调性差异化
+</div>
+</div>
+
+<div class="scatter-footer-note">
+🔒 数据脱敏说明：本图所有气泡的位置（CPM × 投入金额）、大小（观看量）、颜色（梯队）均为同行业头部品牌真实 H1 数据，达人名字以 S1-S7 / A1-A3 / B1-B9 / C1-C3 / H1-H3 编号脱敏处理。<br>
+本图仅用于华大 99 品牌日达人选品<strong>分布结构</strong>的参考，<strong>不构成对友商达人列表的披露</strong>。
+</div>
+
+</div>
+
+<!-- ========== 模式 vs 行业常规打法 ========== -->
+<h2>3 · 这套模式 vs 行业常规打法</h2>
+
+<div class="section">
+    <table>
+        <tr>
+            <th style="width:18%">维度</th>
+            <th style="width:30%;background:#06A77D;">膳食种草品牌商家飞轮模式</th>
+            <th style="width:26%;background:#888;">达播带货模式（达人自己卖）</th>
+            <th style="width:26%;background:#888;">零达人模式（纯自营）</th>
+        </tr>
+        <tr>
+            <td><b>种草节奏</b></td>
+            <td class="hl"><b>大场前 4 个月头部立调性 + 腰尾部放大</b><br><span style="font-size:12px;color:#666">头部反复复用、腰部按头部内容拆解</span></td>
+            <td>大促临近 2-3 周铺达人<br>（撒网式不分量级）</td>
+            <td>不做达人种草</td>
+        </tr>
+        <tr>
+            <td><b>素材资产化</b></td>
+            <td class="hl">✅ <b>一条爆素材跑 4 个月长尾</b></td>
+            <td>素材随大促结束作废</td>
+            <td>仅自营素材，不形成达人内容资产</td>
+        </tr>
+        <tr>
+            <td><b>预约组件</b></td>
+            <td class="hl">✅ <b>短视频蓄"预约用户池"</b><br><span style="font-size:12px;color:#666">把短视频流量延期到大促日</span></td>
+            <td>❌ 直接跳商详，流量当天就漏</td>
+            <td>❌ 无种草入口</td>
+        </tr>
+        <tr>
+            <td><b>达人售卖路径</b></td>
+            <td class="hl"><b>双钩并行</b><br>① 自营钩=明星进自家直播间<br>② 达播钩=货给头部达播混场</td>
+            <td>达人自己直播间卖<br>（流量带粉离场）</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td><b>归因可识别度</b></td>
+            <td class="hl">🔥 <b>全闭环可追踪</b><br>预约组件能识别"哪条素材沉淀的用户"</td>
+            <td>分散在多个达人账号<br>归因黑盒</td>
+            <td>仅自营，不存在多源归因</td>
+        </tr>
+        <tr>
+            <td><b>大促当日爆发力</b></td>
+            <td class="hl"><b>ADQ 单日数倍于日常</b><br><span style="font-size:12px;color:#666">预约池集中召回 + 达人在线 + 平台流量</span></td>
+            <td>分散到多个达人直播间<br>品牌侧爆发力弱</td>
+            <td>仅靠自营叠加，缺乏达人加持</td>
+        </tr>
+        <tr>
+            <td><b>客户复制门槛</b></td>
+            <td>中（需要达人资源池 + 时间投入 + 内部考核机制改造）</td>
+            <td>低（达人能跑就能做）</td>
+            <td>低（不依赖外部资源）</td>
+        </tr>
+    </table>
+</div>
+
+<!-- ========== Q3 复制路径 ========== -->
+<h2>4 · 这套模式 → 华大 99 品牌日的复制路径</h2>
+
+<div class="section">
+    <table>
+        <tr>
+            <th style="width:14%">阶段</th>
+            <th style="width:20%">时间窗口</th>
+            <th style="width:30%">动作</th>
+            <th style="width:36%">华大对应执行建议</th>
+        </tr>
+        <tr class="hl">
+            <td><b>第一段·a</b><br>头部立调性</td>
+            <td>T-12~T-10 周<br><span style="font-size:12px;color:#666">（即 7 月上旬启动）</span></td>
+            <td><b>重金砸 1-2 个"调性锚点"</b><br>知识 IP / 央媒官号 / 高净值女性向头部</td>
+            <td>选 <b>1 位知识科普类头部 IP</b>（脑肠轴长视频深度科普）+ 可选 <b>1 个央媒类官号</b>（背书向）。<b>这条内容会反复加热到 99 当天</b>，是华大长期内容母版。</td>
+        </tr>
+        <tr>
+            <td><b>第一段·b</b><br>腰尾部放大</td>
+            <td>T-10~T-4 周<br><span style="font-size:12px;color:#666">（即 7 月中 ~ 8 月中）</span></td>
+            <td>腰部 10-15 位 + 尾部 15-25 位<br><b>按头部内容方向做拆解、扩人群</b></td>
+            <td>不是"另起炉灶测潜力"，而是<b>把头部那条脑肠轴长视频拆成"睡眠场景版 / 情绪场景版 / 知性妈妈版"</b>分发给腰尾部。同时把<b>头部达人跨 2-3 个品类反复复用</b>（睡眠益生菌→情绪益生菌→其他品）摊薄单条成本。</td>
+        </tr>
+        <tr>
+            <td><b>第二段</b><br>加热 × 预约</td>
+            <td>T-4~T-2 周<br><span style="font-size:12px;color:#666">（即 8 月中 ~ 8 月底）</span></td>
+            <td>爆款素材大量加热<br>+ 直播预约组件蓄水</td>
+            <td>跑赢的素材追加 ADQ 加热预算（3-5 倍）+ 挂直播预约组件。<b>目标：99 直播间预约用户池蓄到 X 万人</b>（数字客户自定）。</td>
+        </tr>
+        <tr>
+            <td><b>第三段</b><br>双钩闭环</td>
+            <td>T-2~T 当天<br><span style="font-size:12px;color:#666">（即 8 月底 ~ 9/9）</span></td>
+            <td>明星进自营直播间<br>+ 货给头部达播混场卖</td>
+            <td>① 明星代言人进华大品牌直播间（自营钩）<br>② 选 1-2 位视频号头部达人接货做混场达播（达播钩）<br><b>9/9 当天双钩同步发力</b></td>
+        </tr>
+        <tr class="hl">
+            <td><b>第三段+</b><br>归因复盘</td>
+            <td>T+1~T+2 周<br><span style="font-size:12px;color:#666">（即 9 月中下旬）</span></td>
+            <td>归因数据反喂第一段<br>沉淀双 11 达人短名单</td>
+            <td>用 99 跑出的 TOP10 达人作为种子，<b>水晶球反向下钻</b>，自动生成双 11 拓人池——这是真正赚到的方法论资产。</td>
+        </tr>
+    </table>
+</div>
+
+<!-- ========== 画像类比 SOP（不替客户选名字、只给画像脚手架） ========== -->
+<h2>5 · 「我们具体应该选哪个达人？」—— 给华大的"画像类比 SOP"</h2>
+
+<div class="gold">
+    <h3>🎯 我们的服务边界 · 不替客户做选号</h3>
+    <p style="font-size:15px;line-height:1.7;margin:8px 0;">
+        华大的达人合作历史、内部资源池、商务节奏、价格底牌——<b>这些只有华大自己最清楚</b>。我们的价值不是替您从茫茫达人池里挑名字，而是：
+    </p>
+    <p style="font-size:16px;line-height:1.7;margin:8px 0;color:#d63031;">
+        <b>✅ 给一张"画像 × 内容方向 × 时间窗口"的选号脚手架，让华大运营团队按图索骥；</b><br>
+        <b>✅ 选出的候选名单，我们用如翼后台水晶球做 8 维度匹配度反查，砍掉调性不符的；</b><br>
+        <b>✅ 投放过程中，我们做"投前调性预判 + 投中加热触发 + 投后归因复盘"3 个机制把数据用起来。</b>
+    </p>
+</div>
+
+<div class="section">
+    <h3>📋 99 品牌日 · 4 类达人画像清单（华大自选名字、我们做匹配度反查）</h3>
+    <table>
+        <tr>
+            <th style="width:11%">阶段</th>
+            <th style="width:14%">画像类别</th>
+            <th style="width:20%">画像类比参考<br><span style="font-weight:normal;font-size:11px;">（行业里有谁这种调性）</span></th>
+            <th style="width:22%">内容方向（华大版）</th>
+            <th style="width:11%">建议合作数</th>
+            <th style="width:22%">华大运营自选维度</th>
+        </tr>
+        <tr class="hl">
+            <td rowspan="2"><b>第一段·a</b><br>头部立调性</td>
+            <td><b>① 知识科普 IP</b><br>头部</td>
+            <td>类罗振宇 / 得到系列 / 知乎大 V 类<br><span style="font-size:11px;color:#888">35-50 岁知性人群信任锚</span></td>
+            <td><b>脑肠轴科普深度长视频</b>——"为什么你睡不好、情绪差，根源不在脑而在肠"<br><span style="font-size:11px;color:#666">立 4 个月内容母版</span></td>
+            <td>1 位</td>
+            <td>● 华大已有合作过的科普 IP 优先<br>● 报价区间客户自定<br>● 7 月上线，10 月持续加热</td>
+        </tr>
+        <tr class="hl">
+            <td><b>② 央媒 / 官号</b><br>头部（可选）</td>
+            <td>类央视文艺 / 央视网快看 / 新华每日电讯类<br><span style="font-size:11px;color:#888">权威背书</span></td>
+            <td>脑肠轴权威背书内容——结合<b>张伯礼院士团队 / 中国营养学会</b>等权威源</td>
+            <td>0-1 位<br>（视预算）</td>
+            <td>● 是否结合华大已签代言人/院士专家联动<br>● 商务接洽周期长，需<b>本周内启动</b></td>
+        </tr>
+        <tr>
+            <td rowspan="3"><b>第一段·b</b><br>腰尾部放大</td>
+            <td><b>③ 知性女性向主持人</b><br>腰部</td>
+            <td>类陈蓉 / 朱桢 / 杨梅姐姐类<br><span style="font-size:11px;color:#888">35-50 岁妈妈/职场女性</span></td>
+            <td><b>睡眠场景化</b>——"陪娃写作业到深夜，睡眠益生菌帮我撑过来"<br>+ <b>情绪场景化</b>——"职场+家庭双压下的情绪管理"</td>
+            <td>4-6 位</td>
+            <td>● 优先视频号粉丝 50-300 万段位<br>● 单条 3-6 万报价段<br>● 8 月密集铺设</td>
+        </tr>
+        <tr>
+            <td><b>④ 高净值女性 IP</b><br>腰部</td>
+            <td>类 Olga 姐姐 / 程雷类<br><span style="font-size:11px;color:#888">高知/高消费女性</span></td>
+            <td><b>脑肠轴生活方式向</b>——"我每天的科学养生 routine"<br>结合睡眠 + 情绪双品矩阵</td>
+            <td>3-5 位</td>
+            <td>● 与华大已合作"知性女性"调性达人对齐<br>● 优先<b>能跨睡眠+情绪 2 个 SKU 复用</b>的达人</td>
+        </tr>
+        <tr>
+            <td><b>⑤ 知识 / 财经类评论员</b><br>尾部</td>
+            <td>类高志凯 / 刘雪松类<br><span style="font-size:11px;color:#888">知性中年男女</span></td>
+            <td><b>脑肠轴硬科学 + 性价比测评</b>——"我用了 3 个月，给您拆解数据"</td>
+            <td>8-15 位</td>
+            <td>● 单条 1-3 万段位<br>● 8 月底 ~ 9 月初密集铺<br>● 跑赢的 72h 内追加互选加热</td>
+        </tr>
+        <tr>
+            <td><b>第三段</b><br>双钩收口</td>
+            <td><b>⑥ 直播钩子达人 / 明星</b><br>头部</td>
+            <td>类陈松伶 / 馋嘴汇类视频号头部混场<br>+ 华大自己签的明星代言人</td>
+            <td><b>直播预约组件 + 9/9 当天进华大品牌直播间</b></td>
+            <td>1-2 位</td>
+            <td>● 与华大代言人方案打通（殷桃/闫妮等候选方向）<br>● 9 月初上线</td>
+        </tr>
+    </table>
+</div>
+
+<div class="note" style="text-align:center;margin-top:30px;padding:20px">
+    生成时间：2026/06/29 ｜ 对客分享版 v2.0 · 三段式飞轮框架 ｜ 适用：华大营养 99 品牌日筹备分享 · 2026/06/30 下午
+</div>
+
+</body>
+</html>
