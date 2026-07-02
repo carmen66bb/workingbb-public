@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>华大营养 × 腾讯营销 · 99 品牌日种草作战 + Q3 R3 突破方案</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+body { background: #f5f5f7; padding: 30px 20px; color: #1d1d1f; line-height: 1.6; }
+
+.doc-wrap { max-width: 1180px; margin: 0 auto; background: white; border-radius: 16px; box-shadow: 0 2px 24px rgba(0,0,0,0.06); overflow: hidden; }
+.page { padding: 20px 50px; background: white; }
+.page + .page { padding-top: 8px; }
+
+.cover { background: linear-gradient(135deg, #1a3a6c 0%, #2e5a9c 100%); color: white; padding: 44px 50px 36px; }
+.cover .title { color: white; font-size: 30px; margin-bottom: 6px; }
+.cover .subtitle { color: rgba(255,255,255,0.8); }
+
+.part-divider { padding: 40px 50px !important; }
+
+.title { font-size: 22px; font-weight: 700; margin-bottom: 6px; color: #1d1d1f; }
+.subtitle { font-size: 13px; color: #86868b; margin-bottom: 16px; }
+.section-tag { display: inline-block; padding: 3px 10px; border-radius: 20px; background: #e3f2fd; color: #1565c0; font-size: 11px; font-weight: 600; margin-bottom: 8px; }
+.h2 { font-size: 19px; font-weight: 700; margin: 18px 0 10px; padding-left: 10px; border-left: 4px solid #1565c0; color: #1d1d1f; line-height: 1.4; }
+.h3 { font-size: 15px; font-weight: 700; margin: 14px 0 8px; color: #1d1d1f; }
+.h4 { font-size: 14px; font-weight: 700; margin: 10px 0 6px; color: #444; }
+p { margin: 8px 0; font-size: 14px; color: #333; }
+
+.insight-box { background: linear-gradient(135deg, #fff5f0, #fff); border-left: 4px solid #E63946; padding: 18px 22px; margin: 20px 0; border-radius: 6px; }
+.insight-title { font-size: 13px; color: #E63946; font-weight: 700; margin-bottom: 8px; letter-spacing: 0.5px; }
+.insight-content { font-size: 14px; color: #1d1d1f; line-height: 1.7; }
+.tip-box { background: #f0f7ff; border-left: 4px solid #1565c0; padding: 14px 18px; margin: 14px 0; border-radius: 6px; font-size: 13px; color: #1565c0; }
+.warn-box { background: #fff3e0; border-left: 4px solid #ef6c00; padding: 14px 18px; margin: 14px 0; border-radius: 6px; font-size: 13px; color: #6d4c00; }
+.note { font-size: 12px; color: #86868b; font-style: italic; margin: 8px 0; }
+.tag-strong { display: inline-block; padding: 2px 8px; border-radius: 4px; background: #ffebee; color: #c62828; font-size: 12px; font-weight: 600; margin: 0 4px; }
+.tag-mid { display: inline-block; padding: 2px 8px; border-radius: 4px; background: #fff8e1; color: #ef6c00; font-size: 12px; font-weight: 600; margin: 0 4px; }
+.tag-weak { display: inline-block; padding: 2px 8px; border-radius: 4px; background: #e8f5e9; color: #2e7d32; font-size: 12px; font-weight: 600; margin: 0 4px; }
+.tag-blue { display: inline-block; padding: 2px 8px; border-radius: 4px; background: #e3f2fd; color: #1565c0; font-size: 12px; font-weight: 600; margin: 0 4px; }
+
+table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13px; }
+th { background: #f0f7ff; padding: 10px 12px; text-align: left; font-weight: 600; color: #1d1d1f; border-bottom: 2px solid #1565c0; }
+td { padding: 10px 12px; border-bottom: 1px solid #f0f0f0; color: #333; }
+tr:hover td { background: #fafafa; }
+
+.metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0; }
+.metric-card { padding: 22px; border-radius: 10px; color: white; }
+.metric-card .metric-label { font-size: 12px; opacity: 0.9; }
+.metric-card .metric-value { font-size: 30px; font-weight: 700; margin: 8px 0; }
+.metric-card .metric-desc { font-size: 12px; opacity: 0.85; }
+.m-red { background: linear-gradient(135deg, #E63946, #c62828); }
+.m-orange { background: linear-gradient(135deg, #F77F00, #ef6c00); }
+.m-green { background: linear-gradient(135deg, #06A77D, #2e7d32); }
+.m-blue { background: linear-gradient(135deg, #1565c0, #0d47a1); }
+.m-purple { background: linear-gradient(135deg, #7b1fa2, #4a148c); }
+.m-teal { background: linear-gradient(135deg, #00838f, #006064); }
+
+/* 数据待填占位符 · 黄色高亮 */
+.placeholder { display: inline-block; background: #fff59d; color: #6d4c00; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 700; border: 1px dashed #f9a825; font-family: "SF Mono", Consolas, monospace; }
+.placeholder-block { background: linear-gradient(135deg, #fffde7, #fff9c4); border: 2px dashed #f9a825; border-radius: 10px; padding: 20px; margin: 16px 0; color: #6d4c00; }
+.placeholder-block .ph-title { font-size: 13px; font-weight: 700; margin-bottom: 8px; }
+.placeholder-block .ph-desc { font-size: 12px; line-height: 1.6; }
+
+.image-placeholder { background: repeating-linear-gradient(45deg, #f5f5f7, #f5f5f7 10px, #ebebeb 10px, #ebebeb 20px); border: 2px dashed #c0c0c0; border-radius: 10px; padding: 50px 30px; text-align: center; margin: 20px 0; color: #86868b; }
+.image-placeholder .ph-title { font-size: 15px; font-weight: 700; color: #555; margin-bottom: 6px; }
+.image-placeholder .ph-path { font-size: 12px; color: #86868b; font-family: "SF Mono", Consolas, monospace; }
+.image-placeholder .ph-icon { font-size: 36px; opacity: 0.4; margin-bottom: 12px; }
+
+.footer { font-size: 11px; color: #999; margin-top: 30px; padding-top: 20px; border-top: 1px solid #f0f0f0; text-align: right; }
+.quote-box { background: #f9f9f9; border-left: 3px solid #999; padding: 14px 18px; margin: 14px 0; font-size: 14px; font-style: italic; color: #555; }
+
+.action-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 20px; margin: 14px 0; transition: all 0.2s; }
+.action-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.08); border-color: #1565c0; }
+.action-card .action-num { display: inline-block; width: 32px; height: 32px; line-height: 32px; text-align: center; background: #1565c0; color: white; border-radius: 50%; font-weight: 700; margin-right: 10px; }
+.action-card .action-title { font-size: 16px; font-weight: 700; display: inline; vertical-align: middle; }
+
+.toc { background: #fafafa; padding: 20px 24px; border-radius: 10px; margin: 24px 0; }
+.toc-item { padding: 6px 0; font-size: 14px; color: #444; }
+.toc-item a { color: #1565c0; text-decoration: none; }
+.toc-item a:hover { text-decoration: underline; }
+.highlight { background: linear-gradient(180deg, transparent 60%, #fff59d 60%); padding: 0 2px; font-weight: 600; }
+
+/* 5R 漏斗对比 */
+.funnel-row { display: flex; align-items: center; margin: 10px 0; gap: 12px; }
+.funnel-label { width: 110px; font-size: 13px; font-weight: 700; color: #1d1d1f; }
+.funnel-bar-wrap { flex: 1; display: flex; gap: 8px; align-items: center; }
+.funnel-bar-track { flex: 1; height: 28px; background: #f0f0f5; border-radius: 6px; overflow: hidden; position: relative; }
+.funnel-bar-fill { height: 100%; display: flex; align-items: center; padding: 0 10px; color: white; font-size: 12px; font-weight: 600; }
+.funnel-bar-fill.self { background: linear-gradient(90deg, #1565c0, #0d47a1); }
+.funnel-bar-fill.bench { background: linear-gradient(90deg, #9ca3af, #6b7280); }
+.funnel-bar-fill.gap { background: linear-gradient(90deg, #E63946, #c62828); }
+.funnel-value { width: 70px; text-align: right; font-size: 12px; font-weight: 700; color: #1d1d1f; }
+
+/* 触点结构柱状 */
+.touchpoint-bar { margin: 10px 0; }
+.touchpoint-row { display: flex; align-items: center; margin: 8px 0; }
+.touchpoint-label { width: 130px; font-size: 13px; color: #1d1d1f; font-weight: 500; }
+.touchpoint-track { flex: 1; height: 22px; background: #f0f0f5; border-radius: 4px; overflow: hidden; position: relative; }
+.touchpoint-fill { height: 100%; display: flex; align-items: center; padding: 0 8px; color: white; font-size: 11px; font-weight: 600; }
+.touchpoint-fill.dominant { background: linear-gradient(90deg, #E63946, #c62828); }
+.touchpoint-fill.weak { background: linear-gradient(90deg, #f9a825, #ef6c00); }
+.touchpoint-fill.zero { background: #d0d0d5; }
+
+/* ===== 图片点击放大 Lightbox ===== */
+.zoomable { cursor: zoom-in; transition: transform 0.2s, box-shadow 0.2s; }
+.zoomable:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.12) !important; }
+#lightbox-overlay { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.92); z-index: 9999; align-items: center; justify-content: center; cursor: zoom-out; padding: 40px; box-sizing: border-box; }
+#lightbox-overlay.active { display: flex; animation: fadeIn 0.2s ease; }
+#lightbox-overlay img { max-width: 100%; max-height: 100%; border-radius: 8px; box-shadow: 0 8px 40px rgba(0,0,0,0.5); object-fit: contain; }
+#lightbox-close { position: absolute; top: 20px; right: 30px; width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.15); color: white; font-size: 24px; line-height: 44px; text-align: center; cursor: pointer; border: none; transition: background 0.2s; }
+#lightbox-close:hover { background: rgba(255,255,255,0.3); }
+#lightbox-caption { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.85); font-size: 13px; max-width: 80%; text-align: center; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.viz-label { display: inline-block; padding: 4px 10px; border-radius: 4px; background: #6366f1; color: white; font-size: 11px; font-weight: 600; margin-left: 6px; vertical-align: middle; }
+</style>
+</head>
+<body>
+
+<div class="doc-wrap">
+
+<!-- ============= 封面 ============= -->
+<div class="page cover">
+<div style="font-size: 12px; opacity: 0.8; margin-bottom: 8px;">华大营养 × 腾讯营销</div>
+<div class="title">华大营养 · 99 品牌日种草作战 + Q3 R3 突破方案</div>
+<div class="subtitle">汇报对象：华大营养品牌团队 ｜ 数据周期：2026.01 - 2026.06 ｜ 主题：从零起跑的种草作战</div>
+<div style="font-size: 11px; opacity: 0.7; margin-top: 18px; text-align: right;">汇报日期：2026 年 7 月 1 日 ｜ 编制：腾讯营销服务团队</div>
+</div>
+
+<!-- ============= 导读 ============= -->
+<div class="page">
+<div class="toc">
+<div class="h3" style="margin-top: 0;">本文档结构</div>
+<div class="toc-item">PART 1 · <strong>现状诊断</strong>：基于如翼旗舰版后台 5R 漏斗、触点结构、3 个月行业排名时间序列三组数据，定位华大当前增长瓶颈</div>
+<div class="toc-item">PART 2 · <strong>服务定位与作战方案</strong>：第一曲线与第二曲线的关系、三段式种草飞轮、99 品牌日五动作矩阵</div>
+</div>
+
+<div class="insight-box">
+<div class="insight-title">核心判断</div>
+<div class="insight-content">
+华大当前 R4 行动率、R5 信赖率均高于竞品均值，电商承接能力位列行业前列。
+当前主要瓶颈在<span class="highlight">漏斗顶端</span>——R3 共鸣率较竞品均值低 9.75pp，新人群的持续流入能力不足。
+<strong>99 品牌日是 H1 最后一次系统性补充 R3 资产的窗口</strong>。
+</div>
+</div>
+</div>
+
+<!-- ============= PART 1 分页符 ============= -->
+<div class="page" style="background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%); text-align: center; padding: 28px 50px; border-top: 1px solid #ececf0; border-bottom: 1px solid #ececf0;">
+<div style="display: inline-flex; align-items: center; gap: 14px;">
+<span style="font-size: 28px;">🔬</span>
+<span style="font-size: 11px; color: #86868b; letter-spacing: 4px;">PART 01</span>
+<span style="font-size: 22px; font-weight: 700; color: #1d1d1f;">现状诊断 · 品牌资产结构的三个核心事实</span>
+</div>
+</div>
+
+<!-- ============= 1.1 R3 漏斗事实 ============= -->
+<div class="page">
+<div class="section-tag">事实 ①</div>
+<div class="h2">5R 漏斗结构：R3 共鸣率 8.88%，较竞品均值低 9.75pp</div>
+<p>数据来源：如翼旗舰版 · 品牌人群资产看板 · 数据周期 2026-05-25 至 2026-06-23（近 30 天）</p>
+
+<div style="margin: 16px 0; text-align: center;">
+<img src="618数据/华大如翼后台品牌人群资产 5R 总览截图.png" alt="如翼后台 · 品牌人群资产 5R 总览" style="max-width: 100%; height: auto; border: 1px solid #e5e5ea; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+<div style="font-size: 11px; color: #86868b; margin-top: 8px; line-height: 1.5;">如翼旗舰版 → 人群 → 品牌人群资产 → 资产概览（含 R1-R5 五列数值、触点分析、5R 人群资产结构 vs 竞品均值对比）</div>
+</div>
+
+<div class="metric-grid">
+<div class="metric-card m-blue">
+<div class="metric-label">华大人群总资产</div>
+<div class="metric-value">1,172万</div>
+<div class="metric-desc">5R 全漏斗总人数</div>
+</div>
+<div class="metric-card m-red">
+<div class="metric-label">R3 共鸣率（华大）</div>
+<div class="metric-value">8.88%</div>
+<div class="metric-desc">竞品均值 18.63% · 差距 -9.75pp</div>
+</div>
+<div class="metric-card m-green">
+<div class="metric-label">R4+R5 总占比（华大）</div>
+<div class="metric-value">1.90%</div>
+<div class="metric-desc">竞品均值 1.16% · ✅ 反超 +0.74pp</div>
+</div>
+</div>
+
+<div class="h3">华大 vs 竞品均值 · 5R 各层占比对比</div>
+<div style="margin: 16px 0;">
+<div class="funnel-row">
+<div class="funnel-label">R1 触达</div>
+<div class="funnel-bar-wrap">
+<div class="funnel-bar-track"><div class="funnel-bar-fill self" style="width: 90%;">华大 48.80%</div></div>
+</div>
+<div class="funnel-value" style="color: #06A77D;">+14pp ✅</div>
+</div>
+<div class="funnel-row">
+<div class="funnel-label"></div>
+<div class="funnel-bar-wrap">
+<div class="funnel-bar-track"><div class="funnel-bar-fill bench" style="width: 64%;">竞品均值 34.79%</div></div>
+</div>
+<div class="funnel-value"></div>
+</div>
+
+<div class="funnel-row" style="margin-top: 14px;">
+<div class="funnel-label">R2 回应</div>
+<div class="funnel-bar-wrap">
+<div class="funnel-bar-track"><div class="funnel-bar-fill self" style="width: 74%;">华大 40.42%</div></div>
+</div>
+<div class="funnel-value" style="color: #ef6c00;">-5pp 🟡</div>
+</div>
+<div class="funnel-row">
+<div class="funnel-label"></div>
+<div class="funnel-bar-wrap">
+<div class="funnel-bar-track"><div class="funnel-bar-fill bench" style="width: 84%;">竞品均值 45.43%</div></div>
+</div>
+<div class="funnel-value"></div>
+</div>
+
+<div class="funnel-row" style="margin-top: 14px;">
+<div class="funnel-label">R3 共鸣 🔴</div>
+<div class="funnel-bar-wrap">
+<div class="funnel-bar-track"><div class="funnel-bar-fill gap" style="width: 16%;">华大 8.88%</div></div>
+</div>
+<div class="funnel-value" style="color: #c62828; font-size: 14px;">-9.75pp 🔴</div>
+</div>
+<div class="funnel-row">
+<div class="funnel-label"></div>
+<div class="funnel-bar-wrap">
+<div class="funnel-bar-track"><div class="funnel-bar-fill bench" style="width: 35%;">竞品均值 18.63%</div></div>
+</div>
+<div class="funnel-value"></div>
+</div>
+
+<div class="funnel-row" style="margin-top: 14px;">
+<div class="funnel-label">R4 行动</div>
+<div class="funnel-bar-wrap">
+<div class="funnel-bar-track"><div class="funnel-bar-fill self" style="width: 12%;">华大 1.29%</div></div>
+</div>
+<div class="funnel-value" style="color: #06A77D;">+0.4pp ✅</div>
+</div>
+<div class="funnel-row">
+<div class="funnel-label"></div>
+<div class="funnel-bar-wrap">
+<div class="funnel-bar-track"><div class="funnel-bar-fill bench" style="width: 8%;">竞品均值 0.89%</div></div>
+</div>
+<div class="funnel-value"></div>
+</div>
+
+<div class="funnel-row" style="margin-top: 14px;">
+<div class="funnel-label">R5 信赖</div>
+<div class="funnel-bar-wrap">
+<div class="funnel-bar-track"><div class="funnel-bar-fill self" style="width: 8%;">华大 0.61%</div></div>
+</div>
+<div class="funnel-value" style="color: #06A77D;">+0.34pp ✅</div>
+</div>
+<div class="funnel-row">
+<div class="funnel-label"></div>
+<div class="funnel-bar-wrap">
+<div class="funnel-bar-track"><div class="funnel-bar-fill bench" style="width: 4%;">竞品均值 0.27%</div></div>
+</div>
+<div class="funnel-value"></div>
+</div>
+</div>
+
+<div class="insight-box">
+<div class="insight-title">诊断结论</div>
+<div class="insight-content">
+华大 5R 漏斗呈<strong>"中段凹陷"结构</strong>——R1 触达、R4 行动、R5 信赖三层均高于竞品均值，仅 R3 共鸣层显著低于均值。
+这一结构意味着<span class="highlight">流量入口与转化承接均高于行业水平，但中段"种草成功"的人群规模偏低</span>，
+存量 R3 已被高效转化为 R4/R5，新 R3 的持续补给能力不足，<strong>R4 增量空间正在逼近上限</strong>。
+</div>
+</div>
+</div>
+
+<!-- ============= 1.2 触点结构事实 ============= -->
+<div class="page">
+<div class="section-tag">事实 ②</div>
+<div class="h2">触点结构：98.84% 集中于效果竞价，品牌端触点接近空白</div>
+<p>数据来源：如翼旗舰版 · 触点分析 · 数据周期 2026-05-25 至 2026-06-23（近 30 天）</p>
+
+<div style="margin: 16px 0; text-align: center;">
+<img src="618数据/华大触点分析人群覆盖截图.png" alt="如翼后台 · 触点分析 · 全部二级触点 · 人群覆盖" style="max-width: 100%; height: auto; border: 1px solid #e5e5ea; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+<div style="font-size: 11px; color: #86868b; margin-top: 8px; line-height: 1.5;">如翼旗舰版 → 人群 → 品牌人群资产 → 触点分析（含效果竞价/互选/视频投放/品牌广告/自然搜索 等触点占比与 TGI）</div>
+</div>
+
+<div class="touchpoint-bar">
+<div class="touchpoint-row">
+<div class="touchpoint-label">效果竞价</div>
+<div class="touchpoint-track"><div class="touchpoint-fill dominant" style="width: 99%;">98.84% · 行业 TOP 121</div></div>
+</div>
+<div class="touchpoint-row">
+<div class="touchpoint-label">互选触点</div>
+<div class="touchpoint-track"><div class="touchpoint-fill weak" style="width: 4%;">3.78%</div></div>
+</div>
+<div class="touchpoint-row">
+<div class="touchpoint-label">视频投放</div>
+<div class="touchpoint-track"><div class="touchpoint-fill weak" style="width: 1%;">0.61%</div></div>
+</div>
+<div class="touchpoint-row">
+<div class="touchpoint-label">品牌广告</div>
+<div class="touchpoint-track"><div class="touchpoint-fill zero" style="width: 2%;">0.00%</div></div>
+</div>
+<div class="touchpoint-row">
+<div class="touchpoint-label">自然搜索</div>
+<div class="touchpoint-track"><div class="touchpoint-fill zero" style="width: 2%;">0.00%</div></div>
+</div>
+</div>
+
+<div class="warn-box">
+<strong>触点-资产对应关系：</strong>效果竞价以承接 R1 触达、R2 回应为主，对 R3 共鸣的拉动有限；
+互选触点与视频号种草投放是 R3 资产沉淀的核心版位。
+当前华大投放预算结构高度集中于 R1/R2 承接版位，R3 增量来源缺失。
+</div>
+
+<div class="insight-box">
+<div class="insight-title">触点结构优化方向</div>
+<div class="insight-content">
+99 品牌日核心动作之一：<br>
+<span class="highlight">将互选触点占比从 3.78% 提升至 15% 以上，配套视频号种草投放，建立 R3 资产沉淀的稳定来源</span>。<br>
+该动作不依赖总预算增加，建议通过<strong>预算结构再分配</strong>——将效果竞价侧边际效率已下降的部分预算，迁移至互选与视频号种草触点。
+</div>
+</div>
+</div>
+
+<!-- ============= 1.3 行业排名时间序列 ============= -->
+<div class="page">
+<div class="section-tag">事实 ③</div>
+<div class="h2">3 个月行业排名时间序列：华大在膳食赛道的位置变化</div>
+<p>数据来源：如翼旗舰版 · 品牌竞争格局 · 数据周期 2026-04 / 2026-05 / 2026-06-15 至 06-21</p>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 16px 0;">
+<div style="text-align: center;">
+<img src="618数据/品牌竞争格局4月.png" alt="如翼后台 · 品牌竞争格局 · 2026-04" style="width: 100%; height: auto; border: 1px solid #e5e5ea; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+<div style="font-size: 11px; color: #555; margin-top: 6px; font-weight: 600;">📅 2026-04（4 月全月）</div>
+</div>
+<div style="text-align: center;">
+<img src="618数据/品牌竞争格局5月.png" alt="如翼后台 · 品牌竞争格局 · 2026-05" style="width: 100%; height: auto; border: 1px solid #e5e5ea; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+<div style="font-size: 11px; color: #555; margin-top: 6px; font-weight: 600;">📅 2026-05（5 月全月）</div>
+</div>
+<div style="text-align: center;">
+<img src="618数据/品牌竞争格局近一周.png" alt="如翼后台 · 品牌竞争格局 · 2026-06-15~06-21" style="width: 100%; height: auto; border: 1px solid #e5e5ea; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+<div style="font-size: 11px; color: #555; margin-top: 6px; font-weight: 600;">📅 2026-06-15 ~ 06-21（近一周）</div>
+</div>
+</div>
+<div style="font-size: 11px; color: #86868b; margin-top: 4px; line-height: 1.5; text-align: center;">如翼旗舰版 → 人群 → 品牌竞争格局 → 三指标对照（指标1：5R 人群数 ｜ 指标2：R3 种草率 ｜ 指标3：R4R5 流入人数）</div>
+
+<div class="h3">三个维度看华大：存量盘子、共鸣效率、转化承接</div>
+
+<table>
+<thead>
+<tr><th>排名维度</th><th>含义</th><th>4 月</th><th>5 月</th><th>6/15-6/21</th><th>趋势判断</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>5R 人群数</strong></td>
+<td>存量盘子（投入端）</td>
+<td>第 23 名 <span style="color:#c62828;">▼6</span></td>
+<td>第 20 名 <span style="color:#06A77D;">▲3</span></td>
+<td>第 23 名</td>
+<td>🟡 存量盘子在 TOP25 徘徊，<strong>4 个月没突破</strong></td>
+</tr>
+<tr>
+<td><strong>R3 种草率</strong></td>
+<td>共鸣效率（产出端）</td>
+<td>第 28 名 <span style="color:#06A77D;">▲2</span></td>
+<td>第 44 名 <span style="color:#c62828;">▼16</span></td>
+<td>第 30 名</td>
+<td>🟡 5 月谷底反弹但仍在中游</td>
+</tr>
+<tr>
+<td><strong>R4R5 流入人数</strong></td>
+<td>转化端</td>
+<td>第 6 名 <span style="color:#c62828;">▼2</span></td>
+<td>第 3 名 <span style="color:#06A77D;">▲3</span></td>
+<td>第 7 名 <span style="color:#c62828;">▼4</span></td>
+<td>🟠 5 月冲顶后 6 月掉队（漏斗传导信号）</td>
+</tr>
+</tbody>
+</table>
+
+<div class="h3" style="margin-top: 22px;">如翼智能总结摘录：3 个月连续指出"内容供给不足"</div>
+<p class="note">三个月的如翼智能总结中，"亮点优势"侧表述每月不同，但"建议改善"侧均明确指向同一问题：内容供给不足拉低种草效率。</p>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: 16px 0;">
+
+<div style="background: #fafafa; border: 1px solid #ececf0; border-radius: 8px; padding: 14px 16px;">
+<div style="font-size: 11px; color: #86868b; font-weight: 600; margin-bottom: 4px;">2026 年 4 月 · 亮点优势</div>
+<div style="font-size: 12px; color: #333; line-height: 1.6; padding-bottom: 10px; border-bottom: 1px dashed #d0d0d5;">
+"硬广投放拉满触达，点击转化效率靠前。广告曝光 9.5 亿（第10名）、触达数 9577 万（第11名）、互选组件点击率 3.15%（第4名）。"
+</div>
+<div style="font-size: 11px; color: #c62828; font-weight: 700; margin: 10px 0 4px;">2026 年 4 月 · 建议改善</div>
+<div style="font-size: 12px; color: #333; line-height: 1.6;">
+"<strong>内容供给不足，用户主动搜索意愿弱</strong>。新发布内容仅 4 条（第53名）、互选观看 3616 次（第25名）、品牌搜索数 0（第69名）。"
+</div>
+</div>
+
+<div style="background: #fafafa; border: 1px solid #ececf0; border-radius: 8px; padding: 14px 16px;">
+<div style="font-size: 11px; color: #86868b; font-weight: 600; margin-bottom: 4px;">2026 年 5 月 · 亮点优势</div>
+<div style="font-size: 12px; color: #333; line-height: 1.6; padding-bottom: 10px; border-bottom: 1px dashed #d0d0d5;">
+"精准人群转化效率领先。R4R5 流入 33784 人（第3名，上升3名）、R4R5 人群数 229235 人（第4名）。"
+</div>
+<div style="font-size: 11px; color: #c62828; font-weight: 700; margin: 10px 0 4px;">2026 年 5 月 · 建议改善</div>
+<div style="font-size: 12px; color: #333; line-height: 1.6;">
+"<strong>内容供给不足拉低种草效率</strong>。R3 种草综合指数排第 23（下降15名）、新发布内容 17 条（第40名）、互选发布次数 2 次（第29名）。"
+</div>
+</div>
+
+<div style="background: #fafafa; border: 1px solid #ececf0; border-radius: 8px; padding: 14px 16px;">
+<div style="font-size: 11px; color: #86868b; font-weight: 600; margin-bottom: 4px;">2026/06-15 至 06-21 · 亮点优势</div>
+<div style="font-size: 12px; color: #333; line-height: 1.6; padding-bottom: 10px; border-bottom: 1px dashed #d0d0d5;">
+"核心人群渗透稳居头部。维矿物质类高意向人群渗透 6.22%（第8名）、保健品偏好人群 3.83%（第9名）。"
+</div>
+<div style="font-size: 11px; color: #c62828; font-weight: 700; margin: 10px 0 4px;">2026/06-15 至 06-21 · 建议改善</div>
+<div style="font-size: 12px; color: #333; line-height: 1.6;">
+"<strong>内容供给不足拉低种草效率</strong>。新发布内容仅 3 条（第43名）、互选观看/互动数 0、R3 流入率 2.31%（第30名）、搜索数 0（第69名）。"
+</div>
+</div>
+
+</div>
+
+<div class="warn-box" style="margin-top: 14px;">
+<strong>连续性观察：</strong>"内容供给不足"为 3 个月内反复出现的同一改善建议项，新发布内容规模分别为 4 条 / 17 条 / 3 条，未形成稳定的内容产出节奏。
+</div>
+
+<div class="insight-box">
+<div class="insight-title">综合诊断</div>
+<div class="insight-content">
+将 3 个月行业排名数据与如翼智能总结交叉分析，可以识别出华大当前的增长路径与瓶颈：<br><br>
+<strong>过去 6 个月，华大主要依靠"素材 + 效果竞价"双发力承接种草环节。</strong>
+该路径依托优秀的素材打磨能力（4 月互选组件点击率行业第 4、CTR 行业第 14），
+在效果竞价端高效完成了 R1/R2 资产沉淀与 R4/R5 转化承接，构成华大当前的核心竞争力来源。<br><br>
+<span class="highlight">该路径在 0→1 阶段具备显著的投入产出效率优势</span>，但 3 个月数据已显示边际效益拐点：<br>
+• <strong>5R 人群数</strong>：4 月第 23 → 5 月第 20 → 6 月第 23，存量盘子 4 个月未实现行业排名突破<br>
+• <strong>R3 种草率</strong>：4 月第 28 → 5 月第 44 → 6 月第 30，共鸣效率持续位于中游<br>
+• <strong>R4R5 流入人数</strong>：5 月第 3 → 6 月第 7，转化端排名首次出现下滑，存量 R3 消耗信号显现<br>
+• <strong>如翼智能总结</strong>：连续 3 个月将"内容供给不足"列为首要改善项<br><br>
+<strong>核心判断</strong>：素材 + 竞价路径的边际效益已接近上限，需引入第二曲线——
+<strong>建立"达人 + 互选 + 内容"的品牌端 R3 资产沉淀能力，与现有效果端能力形成双引擎</strong>。
+</div>
+</div>
+</div>
+
+<!-- ============= 1.4 现状诊断收口 ============= -->
+<div class="page">
+<div class="h2">PART 1 现状诊断综合结论</div>
+
+<div class="insight-box">
+<div class="insight-title">三项事实指向同一结论</div>
+<div class="insight-content">
+<strong>华大现行"素材 + 效果竞价"路径已接近边际效益上限，需启动第二曲线建设。</strong><br><br>
+① <strong>5R 漏斗结构</strong>：R3 共鸣率 8.88%，较竞品均值 18.63% 低 9.75pp，存量 R3 已被高效转化至 R4/R5<br>
+② <strong>触点结构分布</strong>：效果竞价占 98.84%，互选 3.78%、视频投放 0.61%、品牌广告 0%，品牌端 R3 资产沉淀触点缺位<br>
+③ <strong>3 个月行业排名</strong>：5R 人群数 4 个月未突破 TOP20，R4R5 流入排名 5 月第 3 → 6 月第 7 出现首次下滑；如翼智能总结连续 3 个月将"内容供给不足"列为首要改善项<br><br>
+<span class="highlight">99 品牌日是 H1 启动第二曲线的关键窗口期</span>——通过"达人 + 互选 + 内容"建立稳定的 R3 资产沉淀来源，为 Q4 双 11 等大型节点提供品牌端弹药储备。
+</div>
+</div>
+</div>
+
+<!-- ============= PART 2 分页符 ============= -->
+<div class="page" style="background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%); text-align: center; padding: 28px 50px; border-top: 1px solid #ececf0; border-bottom: 1px solid #ececf0;">
+<div style="display: inline-flex; align-items: center; gap: 14px;">
+<span style="font-size: 28px;">🚀</span>
+<span style="font-size: 11px; color: #86868b; letter-spacing: 4px;">PART 02</span>
+<span style="font-size: 22px; font-weight: 700; color: #1d1d1f;">服务定位 + 99 品牌日 5 个动作</span>
+</div>
+</div>
+
+<!-- ============= 2.0 第一曲线 vs 第二曲线 ============= -->
+<div class="page">
+<div class="section-tag">叙事过渡</div>
+<div class="h2">从第一曲线到第二曲线：双引擎并行而非替换</div>
+<p>第二曲线建设的前提是延续第一曲线的能力沉淀，两者并行运作而非互相替代。</p>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 20px 0;">
+
+<div style="background: #fafafa; border: 1px solid #ececf0; border-radius: 10px; padding: 22px;">
+<div style="font-size: 11px; color: #1565c0; font-weight: 700; letter-spacing: 2px; margin-bottom: 6px;">CURVE 01 · 第一曲线（保持）</div>
+<div style="font-size: 17px; font-weight: 700; color: #1d1d1f; margin-bottom: 12px;">素材 + 效果竞价</div>
+<div style="font-size: 13px; color: #333; line-height: 1.8;">
+<strong>已建立能力：</strong><br>
+· 广告曝光行业第 10 名（9.5 亿）<br>
+· 互选组件点击率行业第 4 名（3.15%）<br>
+· R4R5 转化效率排名 TOP5<br>
+· 维矿物质类高意向人群渗透率 6.22%（第 8）<br><br>
+<strong>定位：</strong>持续承接 R1/R2 资产、放大 R4/R5 转化，维持现有生意基本盘的稳定输出。
+</div>
+</div>
+
+<div style="background: #fafafa; border: 1px solid #ececf0; border-radius: 10px; padding: 22px;">
+<div style="font-size: 11px; color: #E63946; font-weight: 700; letter-spacing: 2px; margin-bottom: 6px;">CURVE 02 · 第二曲线（新建）</div>
+<div style="font-size: 17px; font-weight: 700; color: #1d1d1f; margin-bottom: 12px;">达人 + 互选 + 内容</div>
+<div style="font-size: 13px; color: #333; line-height: 1.8;">
+<strong>需补能力：</strong><br>
+· R3 共鸣率 8.88%（较竞品均值低 9.75pp）<br>
+· R4R5 流入排名 5 月第 3 → 6 月第 7<br>
+· 6 月新发布内容 3 条（行业第 43）<br>
+· 互选观看/互动数为 0<br><br>
+<strong>定位：</strong>建立品牌端 R3 资产沉淀的稳定来源，为第一曲线持续输送可转化的高质量人群池。
+</div>
+</div>
+
+</div>
+
+<div class="tip-box">
+<strong>双曲线关系：</strong>第一曲线沉淀华大在 0→1 阶段的竞争优势，第二曲线解决其在向"R3 资产驱动型增长"过渡阶段的能力缺口。两条曲线的核心指标分别为 ROI/CTR 与 R3 流入率，相互独立、各司其职。
+</div>
+</div>
+
+<!-- ============= 2.0.b 服务定位：三段式飞轮 ============= -->
+<div class="page">
+<div class="section-tag">服务定位</div>
+<div class="h2">第二曲线服务框架：三段式种草飞轮</div>
+<p class="note">该方法论已在膳食行业头部品牌（隐去具体品牌名）验证，关键基准：R3 单人沉淀成本 1.13 元、互选触点占比 17.37%。</p>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin: 20px 0;">
+<div style="background: linear-gradient(135deg, #06A77D, #2e7d32); color: white; padding: 22px; border-radius: 12px;">
+<div style="font-size: 11px; opacity: 0.9; letter-spacing: 2px;">SEGMENT 01</div>
+<div style="font-size: 18px; font-weight: 700; margin: 8px 0;">种草前置</div>
+<div style="font-size: 12px; opacity: 0.95; line-height: 1.6;">大场前 <strong>4-6 周</strong>启动达人种草投放，使 <strong>R3 流入节奏</strong>领先 GMV 增长 4-6 周</div>
+</div>
+<div style="background: linear-gradient(135deg, #1565c0, #0d47a1); color: white; padding: 22px; border-radius: 12px;">
+<div style="font-size: 11px; opacity: 0.9; letter-spacing: 2px;">SEGMENT 02</div>
+<div style="font-size: 18px; font-weight: 700; margin: 8px 0;">素材加热 + 直播预约</div>
+<div style="font-size: 12px; opacity: 0.95; line-height: 1.6;">达人视频挂载<strong>直播预约组件</strong>，将 R3 流量定向沉淀至品牌直播间入口</div>
+</div>
+<div style="background: linear-gradient(135deg, #F77F00, #ef6c00); color: white; padding: 22px; border-radius: 12px;">
+<div style="font-size: 11px; opacity: 0.9; letter-spacing: 2px;">SEGMENT 03</div>
+<div style="font-size: 18px; font-weight: 700; margin: 8px 0;">达人进直播间售卖</div>
+<div style="font-size: 12px; opacity: 0.95; line-height: 1.6;">达人在品牌直播间<strong>专场坐镇</strong>，R3 → R4 完成闭环转化</div>
+</div>
+</div>
+
+<div class="tip-box">
+<strong>飞轮设计核心：</strong>方法论的关键不在达人数量，而在<span class="highlight">R3 流入节奏须领先 GMV 增长 4-6 周</span>，使大场启动时已有充足的 R3 资产可供转化。
+</div>
+</div>
+
+<!-- ============= 2.1 99 品牌日 5 动作矩阵 ============= -->
+<div class="page">
+<div class="section-tag">99 品牌日 · 行动方案</div>
+<div class="h2">五动作矩阵 · 统一对齐 R3 净流入北极星指标</div>
+
+<div class="action-card">
+<div><span class="action-num">1</span><span class="action-title">如翼三件套（水晶球 + 钜如翼 + 翼红人）零起点选人 SOP</span></div>
+<p style="margin-top: 10px;">华大本年度尚未启动达人合作，因此本动作不是从既有名单中筛选，而是基于如翼系统从底层数据反查构建达人池。</p>
+<div class="h4" style="margin-top: 12px;">四步 SOP：</div>
+<table style="margin-top: 6px;">
+<thead><tr><th width="60">Step</th><th>动作</th><th>产出</th></tr></thead>
+<tbody>
+<tr><td>①</td><td>定义种子人群（华大 R3 资产 + 商品偏好 + 视频号 TGI 281 三层叠加）</td><td>种子人群包 1 个</td></tr>
+<tr><td>②</td><td>水晶球 10 维度反查（人群属性 / 行业偏好 / 品牌共鸣 / 媒体位 / 视频号达人 / 公众号达人 / 明星粉丝 / 长视频 / 音乐流派 / 商品偏好）</td><td>10 维度画像报告</td></tr>
+<tr><td>③</td><td>钜如翼反推 IP、翼红人反推达人，三处结果交叉验证</td><td>达人候选短名单 <span class="placeholder">N 位待定</span></td></tr>
+<tr><td>④</td><td>投放端按"种子相似度 + 种子渗透率"双指标分层（精准触达 vs 破圈拓新）</td><td>达人投放分组方案</td></tr>
+</tbody>
+</table>
+<div class="warn-box" style="margin-top: 10px;"><strong>服务边界：</strong>腾讯营销侧提供画像脚手架与系统反查能力，最终达人拍板权在华大品牌团队。</div>
+</div>
+
+<div class="action-card">
+<div><span class="action-num">2</span><span class="action-title">互选触点占比由 3.78% 提升至 15% 区间</span></div>
+<p style="margin-top: 10px;">本动作为 99 项目的结构性调整：在总预算不变的前提下，将效果竞价中边际效率较低的部分预算切换至互选触点，补强品牌资产沉淀能力。</p>
+<div class="h4" style="margin-top: 12px;">配置要点：</div>
+<ul style="margin-left: 20px; font-size: 13px; line-height: 1.8; color: #333;">
+<li>互选节奏：99 大场前 4-6 周启动，覆盖视频号腰部达人与公众号科普类账号双触点</li>
+<li>视频号互选：聚焦"科学健康 · 知性女性"调性（对齐华大用户画像 TGI 281）</li>
+<li>公众号互选：双线布局——肠道菌群健康科普（67%）+ 脑肠轴差异化心智（33%），构建被搜索的内容资产</li>
+<li>触点考核：以 <strong>R3 流入率</strong> 为单一 KPI，不以阅读量、CPM 作为评估口径</li>
+</ul>
+</div>
+
+<div class="action-card">
+<div><span class="action-num">3</span><span class="action-title">内容母版 · 主力保盘（肠道）+ 第二曲线孵化（睡眠）双线 6 钩</span></div>
+<p style="margin-top: 10px;">基于华大腾讯生意结构（肠道 80% / 睡眠 5% / 体重 15%），99 种草内容按 <strong>6-7 成肠道 · 3-4 成睡眠</strong> 比例分配，<strong>体重品类不参与 99 节点</strong>保持日常节奏：</p>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 14px 0;">
+<div style="background: linear-gradient(135deg, #e8f5e9, #f1f8e9); border-radius: 10px; padding: 14px; border-left: 4px solid #2e7d32;">
+<div style="font-size: 11px; color: #2e7d32; font-weight: 700; letter-spacing: 1px;">主力保盘 · 65%</div>
+<div style="font-size: 16px; font-weight: 700; color: #1b5e20; margin: 2px 0;">肠道益生菌（益畅）</div>
+<div style="font-size: 11px; color: #555;">心智叙事："肠道菌群健康"——华大基因医学背景作为科学壁垒</div>
+</div>
+<div style="background: linear-gradient(135deg, #e8eaf6, #f3e5f5); border-radius: 10px; padding: 14px; border-left: 4px solid #5e35b1;">
+<div style="font-size: 11px; color: #5e35b1; font-weight: 700; letter-spacing: 1px;">第二曲线 · 35%</div>
+<div style="font-size: 16px; font-weight: 700; color: #4527a0; margin: 2px 0;">睡眠益生菌</div>
+<div style="font-size: 11px; color: #555;">心智叙事："脑肠轴"——避开万益蓝肠道赛道做差异化壁垒</div>
+</div>
+</div>
+
+<div class="h4" style="margin-top: 12px;">6 个内容钩子方向（待与客户共创确认）：</div>
+<table style="margin-top: 6px;">
+<thead><tr><th width="40">#</th><th>钩子方向</th><th>核心场景</th><th>承接 SKU</th><th width="80">心智线</th></tr></thead>
+<tbody>
+<tr><td>①</td><td>华大基因医学背景：菌株证据链与临床数据</td><td>科学派人群 · 信任建立</td><td>益畅（肠道）</td><td style="color: #2e7d32; font-weight: 700;">肠道</td></tr>
+<tr><td>②</td><td>肠道菌群多样性与免疫力的关联</td><td>注重免疫力的家庭主妇/中产</td><td>益畅（肠道）</td><td style="color: #2e7d32; font-weight: 700;">肠道</td></tr>
+<tr><td>③</td><td>办公族久坐肠道紊乱的科学修复方案</td><td>一二线职场人群</td><td>益畅（肠道）</td><td style="color: #2e7d32; font-weight: 700;">肠道</td></tr>
+<tr><td>④</td><td>母婴/家庭场景：从孩子到长辈的肠道健康</td><td>家庭健康决策者</td><td>益畅（肠道）</td><td style="color: #2e7d32; font-weight: 700;">肠道</td></tr>
+<tr><td>⑤</td><td>睡眠质量与肠道菌群代谢物的关联（脑肠轴）</td><td>夜间易醒、入睡困难</td><td>睡眠益生菌</td><td style="color: #5e35b1; font-weight: 700;">睡眠</td></tr>
+<tr><td>⑥</td><td>褪黑素之外的替代方案：脑肠轴调节路径</td><td>褪黑素依赖人群</td><td>睡眠益生菌</td><td style="color: #5e35b1; font-weight: 700;">睡眠</td></tr>
+</tbody>
+</table>
+<div style="font-size: 11px; color: #86868b; margin-top: 8px; line-height: 1.6;">📊 钩子分配：①②③④ 共 4 条肠道线（67%）· ⑤⑥ 共 2 条睡眠线（33%）· 严格对齐 6-7:3-4 内容比例</div>
+<div class="warn-box" style="margin-top: 10px;"><strong>合规红线：</strong>益畅与睡眠益生菌均为普通食品备案，物料不得出现"助眠 / 改善失眠 / 治疗便秘 / 调节免疫"等保健功效宣称，按蓝帽子标准卡口；调性定位为体验分享与科学叙事，非功效推荐。</div>
+</div>
+
+<div class="action-card">
+<div><span class="action-num">4</span><span class="action-title">大场前 4-6 周资产前置节奏（视频号素材加热 + 直播预约组件）</span></div>
+<p style="margin-top: 10px;">由 99 大场倒推 4-6 周对应 <strong>7 月下旬启动</strong>，建议在 7/22 前完成动作 ① 的达人短名单交付与预算切分确认。</p>
+<div class="h4" style="margin-top: 12px;">三阶段节奏：</div>
+<table style="margin-top: 6px;">
+<thead><tr><th>阶段</th><th>时间</th><th>核心动作</th><th>R3 目标</th></tr></thead>
+<tbody>
+<tr><td>第一阶段 · 立调性</td><td>7/22 - 8/4（2 周）</td><td>视频号互选 + 公众号互选启动，建立"科学派 + 知性女性"调性</td><td>R3 流入 <span class="placeholder">待估</span></td></tr>
+<tr><td>第二阶段 · 放规模</td><td>8/5 - 8/25（3 周）</td><td>达人种草矩阵 + 视频号加热 + 直播预约组件全量开启</td><td>R3 流入 <span class="placeholder">待估</span></td></tr>
+<tr><td>第三阶段 · 收口转化</td><td>8/26 - 9/9（2 周）</td><td>达人进品牌直播间专场 + 99 当天大场承接</td><td>R3→R4 转化</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="action-card">
+<div><span class="action-num">5</span><span class="action-title">达人进华大品牌直播间专场（三段式飞轮闭环）</span></div>
+<p style="margin-top: 10px;">本动作与传统"达人种草视频独立投放"模式的核心区别在于：头部达人在 99 当天进入华大品牌直播间专场坐镇 1-2 小时，实现 R3 至 R4 的同链路转化。</p>
+<div class="h4" style="margin-top: 12px;">设计要点：</div>
+<ul style="margin-left: 20px; font-size: 13px; line-height: 1.8; color: #333;">
+<li>同一达人覆盖"种草视频 → 直播预约组件 → 99 当天专场"全链路，避免流量断点</li>
+<li>专场内容形式：达人 + 华大产品研发负责人对谈式直播，输出推荐逻辑</li>
+<li>选品结构：益畅（肠道）为主力保盘 65%，睡眠益生菌借脑肠轴心智做第二曲线增量 35%；体重品类不参与 99 大场</li>
+<li>预算结构：达人专场坑位费 + 商品直播投放叠加</li>
+</ul>
+</div>
+</div>
+
+<!-- ============= 2.2 水晶球反查示范案例 ============= -->
+<div class="page">
+<div class="section-tag">动作 ① 深度展开</div>
+<div class="h2">水晶球反查示范：以华大 R3 资产为种子的 10 维度下钻</div>
+<p>本节是动作 ① 的完整操作示范，呈现如翼系统从种子人群到达人池的反查路径与产出形态。</p>
+
+<div style="margin: 16px 0; text-align: center;">
+<img src="618数据/华大水晶球种子人群 10 维度画像截图.png" alt="如翼后台 · 水晶球 · 华大 618 的3人群 10 维度画像下钻" style="max-width: 100%; height: auto; border: 1px solid #e5e5ea; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+<div style="font-size: 11px; color: #86868b; margin-top: 8px; line-height: 1.5;">如翼旗舰版 → 人群 → 推荐人群市场 → AI 智选 → 水晶球总览（含 10 维度雷达图：行业核心意向 / 品牌共鸣 / 受众长视频偏好 / 受众阅读偏好 / 公众号 / 视频号 / 商品偏好 / 媒体位 / 受众明星偏好 / 受众音乐偏好；与 6 张细分画像：年龄 / 性别 / 常住城市等级 / 学历 / 婚恋育儿 / 消费水平）<br><span style="color: #1565c0; font-weight: 600;">💡 点击图片查看大图细节</span></div>
+</div>
+
+<table>
+<thead><tr><th width="100">维度</th><th>华大种子人群水晶球下钻结果</th><th>对动作 ① 选人的指导意义</th></tr></thead>
+<tbody>
+<tr><td>视频号偏好</td><td><span class="placeholder">已知 TGI 281 · 待补全</span></td><td>视频号为华大用户主场，达人优选视频号腰部</td></tr>
+<tr><td>音乐流派</td><td><span class="placeholder">已知古典音乐 4.77%</span></td><td>偏好"高知 · 文艺"调性的科学派达人</td></tr>
+<tr><td>商品偏好</td><td><span class="placeholder">已知大健康加油包渗透率最高</span></td><td>家庭健康场景达人具备破圈潜力</td></tr>
+<tr><td>地域分布</td><td><span class="placeholder">北京 244 / 江苏 161 / 浙江 111</span></td><td>北上广深与长三角女性达人优先</td></tr>
+<tr><td>明星粉丝</td><td><span class="placeholder">待补全</span></td><td>反推种子人群关注明星，作为好物体验官候选</td></tr>
+<tr><td>公众号达人</td><td><span class="placeholder">待补全</span></td><td>公众号互选触点的选号依据</td></tr>
+<tr><td>其余 4 维度</td><td><span class="placeholder">待补全</span></td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ============= 2.3 99 品牌日整体路径图 ============= -->
+<div class="page">
+<div class="section-tag">作战路径</div>
+<div class="h2">99 品牌日 · 三轮投放盘节奏（测试 → 放量 → 收口）</div>
+<p style="font-size: 13px; color: #555; margin-bottom: 18px;">200 万种草预算拆为 <strong>50万 / 100万 / 50万</strong> 三轮投放，<strong>每一轮基于上一轮真实数据重分配 R3/R4/R5 比例</strong>——把"一次性押注"改造为"测试 → 放量 → 收口"的渐进式投放节奏，6 周内有 <strong>2 次重新决策机会</strong>。</p>
+
+<!-- ===== 三轮投放盘卡片 ===== -->
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0;">
+
+<!-- 第1轮 测试盘 -->
+<div style="background: linear-gradient(135deg, #e3f2fd, #d6e7fc); border-radius: 12px; padding: 20px; border-top: 4px solid #1565c0;">
+<div style="font-size: 11px; color: #1565c0; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px;">ROUND 1 · 测试盘</div>
+<div style="font-size: 24px; font-weight: 700; color: #0d47a1; margin-bottom: 2px;">50<span style="font-size: 14px; font-weight: 500;">万</span></div>
+<div style="font-size: 11px; color: #1565c0; margin-bottom: 14px;">7/22 - 8/4（W1+W2 · 2 周）</div>
+<div style="background: white; border-radius: 8px; padding: 10px 12px; margin-bottom: 8px;">
+<div style="font-size: 11px; color: #86868b; font-weight: 600; margin-bottom: 4px;">📊 R3 : R4 : R5 预算分配</div>
+<div style="font-size: 16px; font-weight: 700; color: #1565c0;">1 : 1 : 1（各 16.5 万）</div>
+</div>
+<div style="background: white; border-radius: 8px; padding: 10px 12px; margin-bottom: 10px;">
+<div style="font-size: 11px; color: #86868b; font-weight: 600; margin-bottom: 4px;">🧬 肠道 / 睡眠双线维度</div>
+<div style="font-size: 13px; font-weight: 700; line-height: 1.6;"><span style="color: #2e7d32;">肠道 32.5 万（65%）</span><br><span style="color: #5e35b1;">睡眠 17.5 万（35%）</span></div>
+</div>
+<div style="font-size: 12px; color: #1d1d1f; line-height: 1.7;">
+<strong>核心动作：</strong>6 波 AI 智选人群 × R3/R4/R5 三类达人池<strong>混合撒网测效率</strong><br><br>
+<strong>产出：</strong>双线 ROI 排行（肠道 vs 睡眠）+ R 层效率信号
+</div>
+</div>
+
+<!-- 第2轮 放量盘 -->
+<div style="background: linear-gradient(135deg, #fff3e0, #ffe4c2); border-radius: 12px; padding: 20px; border-top: 4px solid #ef6c00; position: relative;">
+<div style="position: absolute; top: -10px; right: 12px; background: #ef6c00; color: white; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 10px; letter-spacing: 0.5px;">🔄 决策点 ①</div>
+<div style="font-size: 11px; color: #ef6c00; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px;">ROUND 2 · 放量盘</div>
+<div style="font-size: 24px; font-weight: 700; color: #c62828; margin-bottom: 2px;">100<span style="font-size: 14px; font-weight: 500;">万</span></div>
+<div style="font-size: 11px; color: #ef6c00; margin-bottom: 14px;">8/5 - 8/22（W3+W4+W5 · 约 2.5 周）</div>
+<div style="background: white; border-radius: 8px; padding: 10px 12px; margin-bottom: 8px;">
+<div style="font-size: 11px; color: #86868b; font-weight: 600; margin-bottom: 4px;">📊 R3 : R4 : R5 预算分配</div>
+<div style="font-size: 16px; font-weight: 700; color: #ef6c00;">按 R1 实测 ROI 重分配</div>
+<div style="font-size: 10px; color: #86868b; margin-top: 2px;">示例：6:2:2 / 5:3:2 / 2:6:2 / 3:4:3</div>
+</div>
+<div style="background: white; border-radius: 8px; padding: 10px 12px; margin-bottom: 10px;">
+<div style="font-size: 11px; color: #86868b; font-weight: 600; margin-bottom: 4px;">🧬 肠道 / 睡眠双线维度</div>
+<div style="font-size: 13px; font-weight: 700; line-height: 1.6; color: #1d1d1f;">按 R1 双线 ROI 重分配</div>
+<div style="font-size: 10px; color: #86868b; margin-top: 2px;">基准 65/35，浮动区间 ±15pp</div>
+</div>
+<div style="font-size: 12px; color: #1d1d1f; line-height: 1.7;">
+<strong>核心动作：</strong>把 R1 ROI Top3 的组合放大投入，淘汰长尾<br><br>
+<strong>关键：</strong>双线比例 + R 层比例<strong>双重重分配</strong>——不预设比例，让数据决策
+</div>
+</div>
+
+<!-- 第3轮 收口盘 -->
+<div style="background: linear-gradient(135deg, #fce4ec, #f8bbd0); border-radius: 12px; padding: 20px; border-top: 4px solid #c2185b; position: relative;">
+<div style="position: absolute; top: -10px; right: 12px; background: #c2185b; color: white; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 10px; letter-spacing: 0.5px;">🔄 决策点 ②</div>
+<div style="font-size: 11px; color: #c2185b; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px;">ROUND 3 · 收口盘</div>
+<div style="font-size: 24px; font-weight: 700; color: #880e4f; margin-bottom: 2px;">50<span style="font-size: 14px; font-weight: 500;">万</span></div>
+<div style="font-size: 11px; color: #c2185b; margin-bottom: 14px;">8/23 - 9/9（W6+99 当周 · 2.5 周）</div>
+<div style="background: white; border-radius: 8px; padding: 10px 12px; margin-bottom: 8px;">
+<div style="font-size: 11px; color: #86868b; font-weight: 600; margin-bottom: 4px;">📊 R3 : R4 : R5 预算分配</div>
+<div style="font-size: 16px; font-weight: 700; color: #c2185b;">向 R4/R5 倾斜（推荐 2:5:3）</div>
+<div style="font-size: 10px; color: #86868b; margin-top: 2px;">99 当周集中转化承接</div>
+</div>
+<div style="background: white; border-radius: 8px; padding: 10px 12px; margin-bottom: 10px;">
+<div style="font-size: 11px; color: #86868b; font-weight: 600; margin-bottom: 4px;">🧬 肠道 / 睡眠双线维度</div>
+<div style="font-size: 13px; font-weight: 700; line-height: 1.6; color: #1d1d1f;">收口阶段向肠道主盘聚焦</div>
+<div style="font-size: 10px; color: #86868b; margin-top: 2px;">参考 70 / 30（睡眠保留心智延续）</div>
+</div>
+<div style="font-size: 12px; color: #1d1d1f; line-height: 1.7;">
+<strong>核心动作：</strong>R2 头部组合 ALL IN + 互选大场 + 直播预约组件挂载<br><br>
+<strong>目标：</strong>R3 → R4 转化窗口期承接、99 当日 GMV 释放
+</div>
+</div>
+
+</div>
+
+<!-- ===== 6 波 AI 智选人群 × 肠道/睡眠双线 × R3/R4/R5 第 1 轮分配矩阵 ===== -->
+<div class="h3" style="margin-top: 30px;">📋 第 1 轮 · 50 万测试盘 × 肠道（32.5 万）+ 睡眠（17.5 万）双线 × R3/R4/R5 分配明细</div>
+<p style="font-size: 12px; color: #86868b; margin-bottom: 12px;">6 波 AI 智选人群已于 6/27 生成（有效期 180 天），<strong>按肠道（益畅）+ 睡眠（益生菌）双线撒网</strong>，每条线内再做 R3/R4/R5 三层达人池匹配——R3 偏心智型、R4 偏转化型、R5 偏复购场景。</p>
+
+<!-- ===== 🟢 肠道线（益畅 · 主力保盘）32.5 万 ===== -->
+<div style="background: linear-gradient(135deg, #e8f5e9, #f1f8e9); border-radius: 12px; padding: 16px; margin: 14px 0; border-left: 4px solid #2e7d32;">
+<div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px;">
+<div style="font-size: 11px; color: #2e7d32; font-weight: 700; letter-spacing: 1px;">🟢 肠道线 · 益畅</div>
+<div style="font-size: 18px; font-weight: 700; color: #1b5e20;">32.5 万（65%）</div>
+<div style="font-size: 11px; color: #555;">心智：肠道菌群健康 + 华大基因医学背景</div>
+</div>
+
+<table style="font-size: 12px;">
+<thead>
+<tr style="background: #fafafa;">
+<th style="width: 22%;">人群名 / 体量</th>
+<th style="width: 26%; background: #e3f2fd;">R3 心智盘</th>
+<th style="width: 26%; background: #fff3e0;">R4 转化盘</th>
+<th style="width: 26%; background: #fce4ec;">R5 收割盘</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>99 母婴人群</strong><br><span style="color: #86868b; font-size: 11px;">1.05 亿</span></td>
+<td>母婴肠道科普达人 2 位<br><span style="font-size: 10px; color: #86868b;">建议 3 万</span></td>
+<td>—</td>
+<td>家庭复购场景达人 1 位<br><span style="font-size: 10px; color: #86868b;">建议 2 万</span></td>
+</tr>
+<tr>
+<td><strong>99 爱刚微信科普女</strong><br><span style="color: #86868b; font-size: 11px;">2,400 万</span></td>
+<td>视频号知性肠道科普达人 3 位<br><span style="font-size: 10px; color: #86868b;">建议 5 万 · <strong style="color: #2e7d32;">主战场</strong></span></td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>99 一二线中产知性妈</strong><br><span style="color: #86868b; font-size: 11px;">5,700 万</span></td>
+<td>母婴成长向达人 1 位<br><span style="font-size: 10px; color: #86868b;">建议 2 万</span></td>
+<td>直播挂车型达人 2 位<br><span style="font-size: 10px; color: #86868b;">建议 4 万</span></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>99 高知养生群体</strong><br><span style="color: #86868b; font-size: 11px;">5,400 万</span></td>
+<td>健康科普达人 2 位<br><span style="font-size: 10px; color: #86868b;">建议 3.5 万 · <strong style="color: #2e7d32;">肠道心智主推</strong></span></td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>99 破圈品质自律</strong><br><span style="color: #86868b; font-size: 11px;">5,778 万</span></td>
+<td>—</td>
+<td>品质生活转化达人 4 位<br><span style="font-size: 10px; color: #86868b;">建议 8.5 万 · <strong style="color: #ef6c00;">R4 主战场</strong></span></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>99 高知养生群体（复购）</strong><br><span style="color: #86868b; font-size: 11px;">5,400 万</span></td>
+<td>—</td>
+<td>—</td>
+<td>肠道老客复购达人 2 位<br><span style="font-size: 10px; color: #86868b;">建议 4.5 万</span></td>
+</tr>
+<tr style="background: #fafafa; font-weight: 700;">
+<td>肠道线合计</td>
+<td style="color: #1565c0;">8 位达人 · 13.5 万</td>
+<td style="color: #ef6c00;">6 位达人 · 12.5 万</td>
+<td style="color: #c2185b;">3 位达人 · 6.5 万</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- ===== 🟣 睡眠线（睡眠益生菌 · 第二曲线孵化）17.5 万 ===== -->
+<div style="background: linear-gradient(135deg, #e8eaf6, #f3e5f5); border-radius: 12px; padding: 16px; margin: 14px 0; border-left: 4px solid #5e35b1;">
+<div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px;">
+<div style="font-size: 11px; color: #5e35b1; font-weight: 700; letter-spacing: 1px;">🟣 睡眠线 · 睡眠益生菌</div>
+<div style="font-size: 18px; font-weight: 700; color: #4527a0;">17.5 万（35%）</div>
+<div style="font-size: 11px; color: #555;">心智：脑肠轴差异化 · 避开万益蓝肠道赛道</div>
+</div>
+
+<table style="font-size: 12px;">
+<thead>
+<tr style="background: #fafafa;">
+<th style="width: 22%;">人群名 / 体量</th>
+<th style="width: 26%; background: #e3f2fd;">R3 心智盘</th>
+<th style="width: 26%; background: #fff3e0;">R4 转化盘</th>
+<th style="width: 26%; background: #fce4ec;">R5 收割盘</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>99 中产失眠女性</strong><br><span style="color: #86868b; font-size: 11px;">1,300 万</span></td>
+<td>脑肠轴科普达人 1 位<br><span style="font-size: 10px; color: #86868b;">建议 2 万</span></td>
+<td>睡眠益生菌专场达人 1 位<br><span style="font-size: 10px; color: #86868b;">建议 4 万</span></td>
+<td>睡眠益生菌复购达人 2 位<br><span style="font-size: 10px; color: #86868b;">建议 8 万 · <strong style="color: #c2185b;">R5 主战场</strong></span></td>
+</tr>
+<tr>
+<td><strong>99 高知养生群体（睡眠场景）</strong><br><span style="color: #86868b; font-size: 11px;">5,400 万</span></td>
+<td>脑肠轴心智达人 1 位<br><span style="font-size: 10px; color: #86868b;">建议 2 万</span></td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>99 爱刚微信科普女（睡眠场景）</strong><br><span style="color: #86868b; font-size: 11px;">2,400 万</span></td>
+<td>褪黑素替代方案科普 1 位<br><span style="font-size: 10px; color: #86868b;">建议 1.5 万</span></td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr style="background: #fafafa; font-weight: 700;">
+<td>睡眠线合计</td>
+<td style="color: #1565c0;">3 位达人 · 5.5 万</td>
+<td style="color: #ef6c00;">1 位达人 · 4 万</td>
+<td style="color: #c2185b;">2 位达人 · 8 万</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- ===== 双线总览 ===== -->
+<div style="background: #fafafa; border-radius: 10px; padding: 14px 16px; margin: 14px 0; border-left: 4px solid #555;">
+<div style="font-size: 12px; font-weight: 700; color: #1d1d1f; margin-bottom: 6px;">📊 R1 双线总览</div>
+<table style="font-size: 12px; margin: 0;">
+<thead><tr style="background: white;"><th>—</th><th style="color: #2e7d32;">肠道线</th><th style="color: #5e35b1;">睡眠线</th><th>合计</th></tr></thead>
+<tbody>
+<tr><td><strong>预算</strong></td><td>32.5 万（65%）</td><td>17.5 万（35%）</td><td>50 万</td></tr>
+<tr><td><strong>达人数</strong></td><td>17 位</td><td>6 位</td><td>23 位</td></tr>
+<tr><td><strong>R3 投入</strong></td><td>13.5 万</td><td>5.5 万</td><td>19 万</td></tr>
+<tr><td><strong>R4 投入</strong></td><td>12.5 万</td><td>4 万</td><td>16.5 万</td></tr>
+<tr><td><strong>R5 投入</strong></td><td>6.5 万</td><td>8 万</td><td>14.5 万</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="insight-box" style="margin-top: 20px;">
+<div class="insight-title">第 1 轮测试盘的产出（这是反向决策第 2 轮的依据）</div>
+<div class="insight-content">
+<strong>1️⃣ 单条 ROI 排行：</strong>23 位达人 × 6 波人群 × 3 个 R 层 = 真实 ROI 排行表<br>
+<strong>2️⃣ 双线效率对比：</strong>肠道线（32.5 万）vs 睡眠线（17.5 万）单位预算 ROI 谁更高——验证"主力保盘 + 第二曲线"假设<br>
+<strong>3️⃣ 人群效率排行：</strong>哪 2-3 波人群 ROI 最高（推测：高知养生 / 中产失眠 / 爱刚科普女 大概率胜出）<br>
+<strong>4️⃣ R 层效率信号：</strong>R3 沉淀单价是否 ≤ 2.0 元、R4 转化 ROI 是否 ≥ 2.5、R5 复购 ROI 是否 ≥ 3.5<br>
+<strong>5️⃣ 调整决策：</strong>双线比例 + R 层比例双重重分配——第 2 轮 100 万按此结构投放
+</div>
+</div>
+
+<!-- ===== 6 周时间轴（横向甘特图视图） ===== -->
+<div class="h3" style="margin-top: 30px;">📅 6 周时间轴 · 三轮投放盘 + 5 大动作叠加</div>
+
+<div style="background: #fafafa; border-radius: 10px; padding: 20px; margin: 14px 0;">
+<!-- 时间轴头 -->
+<div style="display: grid; grid-template-columns: 140px repeat(6, 1fr); gap: 6px; margin-bottom: 12px; font-size: 11px; color: #86868b; font-weight: 600; text-align: center;">
+<div style="text-align: left;">动作 / 周次</div>
+<div>W1<br>7/22-7/28</div>
+<div>W2<br>7/29-8/4</div>
+<div>W3<br>8/5-8/11</div>
+<div>W4<br>8/12-8/18</div>
+<div>W5<br>8/19-8/25</div>
+<div>W6 + 99<br>8/26-9/9</div>
+</div>
+
+<!-- 第1轮 投放盘条 -->
+<div style="display: grid; grid-template-columns: 140px repeat(6, 1fr); gap: 6px; margin-bottom: 8px; align-items: center;">
+<div style="font-size: 12px; font-weight: 700; color: #1565c0;">🔵 R1 测试盘 50万</div>
+<div style="grid-column: 2 / 4; background: linear-gradient(90deg, #1565c0, #1e88e5); color: white; padding: 8px; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 600;">50 万 · 肠道 32.5+睡眠 17.5 · R3:R4:R5=1:1:1</div>
+</div>
+
+<!-- 第2轮 投放盘条 -->
+<div style="display: grid; grid-template-columns: 140px repeat(6, 1fr); gap: 6px; margin-bottom: 8px; align-items: center;">
+<div style="font-size: 12px; font-weight: 700; color: #ef6c00;">🟠 R2 放量盘 100万</div>
+<div style="grid-column: 4 / 7; background: linear-gradient(90deg, #ef6c00, #ff9800); color: white; padding: 8px; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 600;">100 万 · 按 R1 实测重分配比例</div>
+</div>
+
+<!-- 第3轮 投放盘条 -->
+<div style="display: grid; grid-template-columns: 140px repeat(6, 1fr); gap: 6px; margin-bottom: 16px; align-items: center;">
+<div style="font-size: 12px; font-weight: 700; color: #c2185b;">🔴 R3 收口盘 50万</div>
+<div style="grid-column: 7 / 8; background: linear-gradient(90deg, #c2185b, #e91e63); color: white; padding: 8px; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 600;">50万·收口</div>
+</div>
+
+<div style="border-top: 1px dashed #d0d0d5; margin: 16px 0;"></div>
+
+<!-- 5 个动作叠加层 -->
+<div style="display: grid; grid-template-columns: 140px repeat(6, 1fr); gap: 6px; margin-bottom: 6px; align-items: center;">
+<div style="font-size: 11px; color: #555;">动作①·水晶球下钻</div>
+<div style="grid-column: 2 / 3; background: #e8eaf6; color: #3f51b5; padding: 4px; border-radius: 4px; text-align: center; font-size: 10px; font-weight: 600;">短名单交付</div>
+</div>
+<div style="display: grid; grid-template-columns: 140px repeat(6, 1fr); gap: 6px; margin-bottom: 6px; align-items: center;">
+<div style="font-size: 11px; color: #555;">动作②·内容母版</div>
+<div style="grid-column: 3 / 5; background: #e8eaf6; color: #3f51b5; padding: 4px; border-radius: 4px; text-align: center; font-size: 10px; font-weight: 600;">肠道+睡眠双线内容打磨</div>
+</div>
+<div style="display: grid; grid-template-columns: 140px repeat(6, 1fr); gap: 6px; margin-bottom: 6px; align-items: center;">
+<div style="font-size: 11px; color: #555;">动作③·视频号铺量</div>
+<div style="grid-column: 4 / 7; background: #e8eaf6; color: #3f51b5; padding: 4px; border-radius: 4px; text-align: center; font-size: 10px; font-weight: 600;">互选 + 视频号加热双引擎</div>
+</div>
+<div style="display: grid; grid-template-columns: 140px repeat(6, 1fr); gap: 6px; margin-bottom: 6px; align-items: center;">
+<div style="font-size: 11px; color: #555;">动作④·预约组件</div>
+<div style="grid-column: 6 / 8; background: #e8eaf6; color: #3f51b5; padding: 4px; border-radius: 4px; text-align: center; font-size: 10px; font-weight: 600;">直播预约挂载 + R3→R4 引流</div>
+</div>
+<div style="display: grid; grid-template-columns: 140px repeat(6, 1fr); gap: 6px; align-items: center;">
+<div style="font-size: 11px; color: #555;">动作⑤·达人专场</div>
+<div style="grid-column: 7 / 8; background: #fff3e0; color: #c62828; padding: 4px; border-radius: 4px; text-align: center; font-size: 10px; font-weight: 700;">99 大场承接</div>
+</div>
+</div>
+
+<!-- ===== 周次细化表（对齐三轮节奏） ===== -->
+<div class="h3" style="margin-top: 26px;">📋 6 周作战路径详表（含里程碑 + 决策节点）</div>
+<table>
+<thead><tr><th>周次</th><th>时间</th><th>投放轮次</th><th>核心动作</th><th>关键里程碑 / 决策节点</th></tr></thead>
+<tbody>
+<tr><td>W1</td><td>7/22 - 7/28</td><td style="background: #e3f2fd; color: #1565c0; font-weight: 700;">R1 测试盘启动</td><td>动作 ① 完成 · 6 波人群 × R3/R4/R5 达人短名单交付 · 启动测试投放</td><td>SOP 跑通 · 第 1 轮投放上线</td></tr>
+<tr><td>W2</td><td>7/29 - 8/4</td><td style="background: #e3f2fd; color: #1565c0; font-weight: 700;">R1 测试盘收官</td><td>动作 ②/③ 启动 · 互选 + 内容母版打磨 · 收集 R1 真实 ROI 数据</td><td><strong style="color: #ef6c00;">🔄 决策点 ①</strong>：R1 数据复盘会 · 重分配 R2 比例</td></tr>
+<tr><td>W3</td><td>8/5 - 8/11</td><td style="background: #fff3e0; color: #ef6c00; font-weight: 700;">R2 放量盘启动</td><td>动作 ③ 进入第二阶段 · 视频号加热铺量 · 按 R1 实测比例投放 R2</td><td>R3 流入提速 · R2 第一波数据观察</td></tr>
+<tr><td>W4</td><td>8/12 - 8/18</td><td style="background: #fff3e0; color: #ef6c00; font-weight: 700;">R2 放量盘加压</td><td>互选 + 达人种草双引擎齐发 · 头部组合加投</td><td>R3 流入峰值 · 中段健康度复盘</td></tr>
+<tr><td>W5</td><td>8/19 - 8/25</td><td style="background: #fff3e0; color: #ef6c00; font-weight: 700;">R2 收官</td><td>动作 ④ 直播预约组件挂载 · 资产前置冲刺</td><td><strong style="color: #c2185b;">🔄 决策点 ②</strong>：R2 数据复盘会 · 重分配 R3 比例</td></tr>
+<tr><td>W6</td><td>8/26 - 9/2</td><td style="background: #fce4ec; color: #c2185b; font-weight: 700;">R3 收口盘启动</td><td>动作 ⑤ · 达人专场密集排播 · 头部组合 ALL IN</td><td>R3 → R4 转化窗口打开</td></tr>
+<tr style="background: #fffde7;"><td><strong>99</strong></td><td><strong>9/3 - 9/9</strong></td><td style="background: #fce4ec; color: #c2185b; font-weight: 700;">R3 大场承接</td><td><strong>99 品牌日大场 · 直播间 + 达人专场双引擎承接</strong></td><td><strong style="color: #c62828;">🎯 GMV 与 R4 同步释放</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ============= 2.4 规划建议与复盘机制 ============= -->
+<div class="page">
+<div class="section-tag">规划建议</div>
+<div class="h2">99 品牌日 · 规划建议与复盘机制</div>
+<p style="font-size: 13px; color: #555; margin-bottom: 14px;">本节<strong>不预设具体收益数字</strong>——任何一次性数字承诺，对客户与执行方都是双向风险。我们交付的是一套<strong>"信号检测 + 红绿黄灯决策 + 主动止损"机制</strong>，让 200 万预算的每一轮投放都有真实数据作为下一轮决策依据。</p>
+
+<!-- ===== 三轮信号检测体系 ===== -->
+<div class="h3" style="margin-top: 24px;">📡 三轮投放信号检测体系</div>
+
+<!-- ROUND 1 信号检测 -->
+<div style="background: linear-gradient(135deg, #e3f2fd, #f0f7ff); border-radius: 12px; padding: 20px; margin: 14px 0; border-left: 4px solid #1565c0;">
+<div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 12px;">
+<div style="font-size: 11px; color: #1565c0; font-weight: 700; letter-spacing: 1px;">ROUND 1 · 测试盘</div>
+<div style="font-size: 16px; font-weight: 700; color: #0d47a1;">50 万 · 7/22 - 8/4</div>
+</div>
+<div style="font-size: 12px; color: #555; margin-bottom: 12px;">检测目标：跑出"6 波人群 × R3/R4/R5 × 客户 R3 反查达人池"的真实效率信号</div>
+
+<table style="font-size: 12px; margin-top: 8px;">
+<thead>
+<tr style="background: #fafafa;">
+<th>信号维度</th>
+<th style="background: #e8f5e9; color: #2e7d32;">🟢 绿灯（放量）</th>
+<th style="background: #fff8e1; color: #f9a825;">🟡 黄灯（调整后放量）</th>
+<th style="background: #ffebee; color: #c62828;">🔴 红灯（暂停 R2）</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><strong>R3 沉淀单价</strong></td><td>≤ 2.0 元/人</td><td>2.0 - 3.0 元/人</td><td>&gt; 3.0 元/人</td></tr>
+<tr><td><strong>R4 转化 ROI</strong></td><td>≥ 2.5</td><td>1.5 - 2.5</td><td>&lt; 1.5</td></tr>
+<tr><td><strong>R5 复购 ROI</strong></td><td>≥ 3.5</td><td>2.0 - 3.5</td><td>&lt; 2.0</td></tr>
+<tr><td><strong>单达人 ROI 收敛度</strong></td><td>Top3 达人 ROI &gt; 整体均值 1.5 倍</td><td>Top3 略高于均值</td><td>各达人 ROI 趋同 · 无明显头部</td></tr>
+<tr style="background: #f3e5f5;"><td><strong>🧬 双线效率比对</strong><br><span style="font-size: 10px; color: #86868b;">肠道 vs 睡眠 单位预算 ROI</span></td><td>两线 ROI 偏差 ≤ 25%（双线均跑通）</td><td>偏差 25%-50%（弱线需调结构）</td><td>偏差 &gt; 50%（弱线建议下沉至 R2 ≤ 20%）</td></tr>
+</tbody>
+</table>
+
+<div style="background: white; border-radius: 8px; padding: 12px 14px; margin-top: 12px; font-size: 12px; line-height: 1.7;">
+<strong style="color: #1565c0;">⚡ 决策动作：</strong>
+✅ 多维度全绿 → R2 进入放量盘，按 R1 头部组合放大投入 ｜
+🟡 部分黄 → R2 结构调整后投放（淘汰长尾达人/人群） ｜
+🔴 多维度红 → R2 暂停，召开复盘会重新评估方向
+</div>
+</div>
+
+<!-- ROUND 2 信号检测 -->
+<div style="background: linear-gradient(135deg, #fff3e0, #fff8e1); border-radius: 12px; padding: 20px; margin: 14px 0; border-left: 4px solid #ef6c00;">
+<div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 12px;">
+<div style="font-size: 11px; color: #ef6c00; font-weight: 700; letter-spacing: 1px;">ROUND 2 · 放量盘</div>
+<div style="font-size: 16px; font-weight: 700; color: #c62828;">100 万 · 8/5 - 8/22</div>
+</div>
+<div style="font-size: 12px; color: #555; margin-bottom: 12px;">检测目标：R1 头部组合在放量后是否保持效率、R3 资产是否实现规模化沉淀</div>
+
+<table style="font-size: 12px; margin-top: 8px;">
+<thead>
+<tr style="background: #fafafa;">
+<th>信号维度</th>
+<th style="background: #e8f5e9; color: #2e7d32;">🟢 绿灯（收口）</th>
+<th style="background: #fff8e1; color: #f9a825;">🟡 黄灯（调整结构后收口）</th>
+<th style="background: #ffebee; color: #c62828;">🔴 红灯（暂停 R3）</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><strong>R3 流入率提升</strong></td><td>相较 R1 末位 ≥ 30%</td><td>提升 10% - 30%</td><td>提升 &lt; 10% 或下滑</td></tr>
+<tr><td><strong>头部组合 ROI 保持</strong></td><td>R1 Top3 组合在 R2 ROI 保持 ≥ 80%</td><td>保持 50% - 80%</td><td>保持 &lt; 50%（规模化失效）</td></tr>
+<tr><td><strong>累计 R3 净流入</strong></td><td>R1+R2 累计达预期目标值</td><td>达成 70% - 100%</td><td>&lt; 70%</td></tr>
+<tr><td><strong>互选触点占比</strong></td><td>从 3.10% 提升至 ≥ 10%</td><td>提升至 6% - 10%</td><td>提升 &lt; 6%</td></tr>
+<tr style="background: #f3e5f5;"><td><strong>🧬 双线 R3 沉淀效率</strong><br><span style="font-size: 10px; color: #86868b;">规模化后是否保持差异化</span></td><td>肠道 R3 沉淀提速 ≥ 30%、睡眠 R3 占比稳定在 25-40%</td><td>一线提速、另一线持平</td><td>双线均无明显提速</td></tr>
+</tbody>
+</table>
+
+<div style="background: white; border-radius: 8px; padding: 12px 14px; margin-top: 12px; font-size: 12px; line-height: 1.7;">
+<strong style="color: #ef6c00;">⚡ 决策动作：</strong>
+✅ 全绿 → R3 集中收口，头部组合 ALL IN 至 99 当周 ｜
+🟡 部分黄 → R3 结构调整后收口（如向 R4/R5 倾斜） ｜
+🔴 多数红 → R3 暂停，转向其他链路（如直接加大效果竞价投入）
+</div>
+</div>
+
+<!-- ROUND 3 信号检测 -->
+<div style="background: linear-gradient(135deg, #fce4ec, #fef0f5); border-radius: 12px; padding: 20px; margin: 14px 0; border-left: 4px solid #c2185b;">
+<div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 12px;">
+<div style="font-size: 11px; color: #c2185b; font-weight: 700; letter-spacing: 1px;">ROUND 3 · 收口盘</div>
+<div style="font-size: 16px; font-weight: 700; color: #880e4f;">50 万 · 8/23 - 9/9</div>
+</div>
+<div style="font-size: 12px; color: #555; margin-bottom: 12px;">检测目标：99 当周 GMV 释放、R3→R4 转化承接、Q3 整体 R3 资产健康度</div>
+
+<table style="font-size: 12px; margin-top: 8px;">
+<thead>
+<tr style="background: #fafafa;">
+<th>信号维度</th>
+<th style="background: #e8f5e9; color: #2e7d32;">🟢 绿灯（Q4 复用）</th>
+<th style="background: #fff8e1; color: #f9a825;">🟡 黄灯（Q4 优化方向）</th>
+<th style="background: #ffebee; color: #c62828;">🔴 红灯（Q4 重新评估）</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><strong>R3 → R4 转化率</strong></td><td>≥ 15%（行业头部水平）</td><td>8% - 15%</td><td>&lt; 8%</td></tr>
+<tr><td><strong>99 当日 GMV 同比</strong></td><td>同比 H1 单日峰值 ≥ +30%</td><td>+10% - +30%</td><td>同比下滑或 &lt; +10%</td></tr>
+<tr><td><strong>R3 资产存量增长</strong></td><td>R3 占比从 8.88% 提升至 ≥ 12%</td><td>提升至 10% - 12%</td><td>提升 &lt; 10%（未达基线）</td></tr>
+<tr><td><strong>99 后 30 天 R3 留存</strong></td><td>留存率 ≥ 60%</td><td>40% - 60%</td><td>&lt; 40%（短期流失）</td></tr>
+<tr style="background: #f3e5f5;"><td><strong>🧬 双线 GMV 贡献度</strong><br><span style="font-size: 10px; color: #86868b;">益畅 vs 睡眠益生菌 99 当日 GMV 拆分</span></td><td>肠道仍占 60%+（主力保盘成立）<br>睡眠 ≥ 15%（第二曲线孵化成功）</td><td>肠道 50-60% 或睡眠 8-15%</td><td>肠道 &lt; 50%（主盘动摇）或睡眠 &lt; 8%（第二曲线失败）</td></tr>
+</tbody>
+</table>
+
+<div style="background: white; border-radius: 8px; padding: 12px 14px; margin-top: 12px; font-size: 12px; line-height: 1.7;">
+<strong style="color: #c2185b;">⚡ 决策动作：</strong>
+✅ 全绿 → Q4 双 11 复用本方法论扩大投入 ｜
+🟡 部分黄 → Q4 优化达人池/人群配置后复用 ｜
+🔴 多数红 → Q4 暂不复用，转向其他打法实验
+</div>
+</div>
+
+<!-- ===== 三项交付承诺 ===== -->
+<div class="h3" style="margin-top: 30px;">🤝 我们的三项交付承诺</div>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 14px 0;">
+
+<div style="background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 18px; border-top: 3px solid #1565c0;">
+<div style="font-size: 11px; color: #1565c0; font-weight: 700; margin-bottom: 6px;">承诺 ①</div>
+<div style="font-size: 14px; font-weight: 700; color: #1d1d1f; margin-bottom: 8px;">达人短名单 W1 内交付</div>
+<div style="font-size: 12px; color: #555; line-height: 1.6;">基于华大品牌 R3 资产反查的"R3/R4/R5 三类达人池 × 6 波人群交叉投放方案"，7/22-7/28 第 1 周完成短名单交付。</div>
+</div>
+
+<div style="background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 18px; border-top: 3px solid #ef6c00;">
+<div style="font-size: 11px; color: #ef6c00; font-weight: 700; margin-bottom: 6px;">承诺 ②</div>
+<div style="font-size: 14px; font-weight: 700; color: #1d1d1f; margin-bottom: 8px;">每轮复盘报告按时交付</div>
+<div style="font-size: 12px; color: #555; line-height: 1.6;">
+R1 复盘：5 个工作日内交付（赶上 R2 启动决策窗）<br>
+R2 复盘：7 个工作日内交付<br>
+R3 复盘：99 后 10 个工作日内交付（含 99 当日全口径数据）
+</div>
+</div>
+
+<div style="background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 18px; border-top: 3px solid #c2185b;">
+<div style="font-size: 11px; color: #c2185b; font-weight: 700; margin-bottom: 6px;">承诺 ③</div>
+<div style="font-size: 14px; font-weight: 700; color: #1d1d1f; margin-bottom: 8px;">红灯主动止损</div>
+<div style="font-size: 12px; color: #555; line-height: 1.6;">任何一轮出现多维度红灯，<strong>主动建议暂停后续投放</strong>并启动复盘会，绝不为消耗预算而继续投放——这是对华大 200 万预算的最低尊重。</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- ============= 封底 ============= -->
+<div class="page" style="background: linear-gradient(135deg, #1a3a6c 0%, #2e5a9c 100%); color: white; text-align: center; padding: 50px;">
+<div style="font-size: 11px; opacity: 0.7; letter-spacing: 4px; margin-bottom: 14px;">END · 后续协同</div>
+<div style="font-size: 24px; font-weight: 700; margin-bottom: 14px;">99 品牌日 · H1 品牌资产结构调整窗口</div>
+<div style="font-size: 14px; opacity: 0.9; line-height: 1.8; max-width: 760px; margin: 0 auto;">
+以"种草前置 + 互选补给 + 直播间承接"三段式飞轮，为华大补齐第二曲线起跑路径。<br>
+腾讯营销侧交付 <strong>系统反查能力 + 内容母版脚手架 + 作战节奏对齐</strong>，最终拍板权在品牌方。
+</div>
+<div style="font-size: 11px; opacity: 0.6; margin-top: 30px;">华大营养 × 腾讯营销 · 2026.07.01 ｜ 编制：腾讯营销服务团队</div>
+</div>
+
+</div><!-- doc-wrap end -->
+
+<!-- ===== Lightbox 点击放大模态 ===== -->
+<div id="lightbox-overlay" onclick="closeLightbox(event)">
+<button id="lightbox-close" onclick="closeLightbox(event)" aria-label="关闭">×</button>
+<img id="lightbox-image" src="" alt="">
+<div id="lightbox-caption"></div>
+</div>
+
+<script>
+(function() {
+  // 自动给所有 img 加 .zoomable 类（除去明确不需要的）
+  document.querySelectorAll('img').forEach(function(img) {
+    if (!img.closest('#lightbox-overlay')) {
+      img.classList.add('zoomable');
+    }
+  });
+
+  var overlay = document.getElementById('lightbox-overlay');
+  var lbImg = document.getElementById('lightbox-image');
+  var lbCap = document.getElementById('lightbox-caption');
+
+  // 事件委托：点击任意 .zoomable 图片打开
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('zoomable')) {
+      lbImg.src = e.target.src;
+      lbImg.alt = e.target.alt || '';
+      lbCap.textContent = e.target.alt || '';
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  });
+
+  // ESC 关闭
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) {
+      closeLightbox();
+    }
+  });
+})();
+
+function closeLightbox(e) {
+  // 点击图片本身不关闭，只有点击蒙层/关闭按钮/按 ESC 才关闭
+  if (e && e.target.id === 'lightbox-image') return;
+  var overlay = document.getElementById('lightbox-overlay');
+  overlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
+</script>
+
+</body>
+</html>
