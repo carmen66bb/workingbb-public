@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>多燕瘦 × 腾讯营销 · 2026 H2 种草作战方案</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f5f5f7;
+  color: #1d1d1f;
+  line-height: 1.65;
+  font-size: 15px;
+}
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 32px;
+  background: #fff;
+  min-height: 100vh;
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+/* ====== 封面 ====== */
+.cover {
+  text-align: center;
+  padding: 80px 32px 60px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px 12px 0 0;
+  color: #fff;
+  margin: -48px -32px 48px;
+}
+.cover h1 { font-size: 32px; font-weight: 800; letter-spacing: 1px; margin-bottom: 12px; }
+.cover .sub { font-size: 16px; opacity: 0.88; margin-bottom: 24px; }
+.cover .meta { font-size: 13px; opacity: 0.7; }
+/* ====== 分页符 ====== */
+.page-break {
+  text-align: center;
+  padding: 56px 0 40px;
+  border-top: 2px solid #e8e8ed;
+  margin: 48px 0 32px;
+}
+.page-break .icon { font-size: 36px; margin-bottom: 8px; }
+.page-break h2 { font-size: 22px; color: #667eea; }
+.page-break .sub { font-size: 14px; color: #86868b; }
+/* ====== 标题系统 ====== */
+.h1 { font-size: 26px; font-weight: 800; margin: 0 0 20px; }
+.h2 { font-size: 22px; font-weight: 700; margin: 32px 0 18px; padding-left: 14px; border-left: 4px solid #667eea; }
+.h3 { font-size: 17px; font-weight: 700; margin: 24px 0 12px; }
+.h4 { font-size: 15px; font-weight: 600; margin: 16px 0 8px; color: #555; }
+.section-tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.section-tag.purple { background: #ede9fe; color: #7c3aed; }
+.section-tag.green { background: #dcfce7; color: #059669; }
+.section-tag.red { background: #fee2e2; color: #dc2626; }
+.section-tag.blue { background: #dbeafe; color: #2563eb; }
+/* ====== 卡片系统 ====== */
+.metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 16px 0; }
+.metric-card {
+  background: #fafafa;
+  border: 1px solid #e8e8ed;
+  border-radius: 10px;
+  padding: 16px;
+}
+.metric-card-sm { padding: 12px; }
+.metric-label { font-size: 12px; color: #86868b; margin-bottom: 4px; }
+.metric-value { font-size: 26px; font-weight: 800; color: #1d1d1f; }
+.metric-desc { font-size: 12px; color: #86868b; margin-top: 4px; }
+.m-purple .metric-value { color: #7c3aed; }
+.m-green .metric-value { color: #059669; }
+.m-red .metric-value { color: #dc2626; }
+.m-blue .metric-value { color: #2563eb; }
+.m-orange .metric-value { color: #ea580c; }
+/* ====== 信息框 ====== */
+.insight-box {
+  background: #f8fafc;
+  border-left: 4px solid #667eea;
+  border-radius: 0 8px 8px 0;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+.insight-title { font-weight: 700; font-size: 14px; color: #667eea; margin-bottom: 6px; }
+.insight-content { font-size: 14px; color: #444; }
+.quote-box {
+  background: linear-gradient(135deg, #ede9fe 0%, #fff 100%);
+  border: 1px solid #e0d4fc;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 20px 0;
+  font-size: 14.5px;
+  line-height: 1.8;
+}
+.good-box {
+  background: linear-gradient(135deg, #dcfce7 0%, #fff 100%);
+  border-left: 4px solid #059669;
+  border-radius: 0 8px 8px 0;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+.warn-box {
+  background: linear-gradient(135deg, #fef3c7 0%, #fff 100%);
+  border-left: 4px solid #d97706;
+  border-radius: 0 8px 8px 0;
+  padding: 14px 18px;
+  margin: 14px 0;
+  font-size: 13.5px;
+}
+.tip-box {
+  background: #eff6ff;
+  border-left: 3px solid #2563eb;
+  border-radius: 0 6px 6px 0;
+  padding: 10px 14px;
+  margin: 10px 0;
+  font-size: 13px;
+}
+.action-card {
+  background: #fff;
+  border: 1px solid #e8e8ed;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin: 14px 0;
+}
+.action-num {
+  display: inline-block;
+  width: 26px; height: 26px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+.action-title { font-weight: 700; font-size: 14.5px; }
+/* ====== 表格 ====== */
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13.5px; }
+thead th {
+  background: #f8f8fa;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+  font-size: 13px;
+}
+tbody td { padding: 9px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+.num { text-align: right; font-weight: 600; font-family: "SF Mono", monospace; }
+tr:hover { background: #fafafa; }
+.mini-chart { background: #fafafa; border: 1px solid #e8e8ed; border-radius: 10px; padding: 16px; margin: 14px 0; }
+.chart-title { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+.chart-sub { font-size: 12px; color: #86868b; margin-bottom: 12px; }
+/* ====== 触点进度条 ====== */
+.touchpoint-bar { margin: 8px 0; }
+.touchpoint-row { display: flex; align-items: center; margin-bottom: 8px; }
+.touchpoint-label { width: 110px; font-size: 13px; flex-shrink: 0; }
+.touchpoint-track { flex: 1; height: 26px; background: #f0f0f0; border-radius: 13px; overflow: hidden; position: relative; }
+.touchpoint-fill { height: 100%; border-radius: 13px; display: flex; align-items: center; justify-content: flex-end; padding: 0 10px; font-size: 12px; font-weight: 600; color: #fff; white-space: nowrap; min-width: 50px;}
+.fill-dominant { background: linear-gradient(90deg, #2563eb, #667eea); } /* 效果竞价 */
+.fill-mid { background: linear-gradient(90deg, #f59e0b, #fbbf24); } /* 互选 */
+.fill-brand { background: linear-gradient(90deg, #10b981, #34d399); } /* 品牌竞价 */
+.fill-zero { background: #e8e8ed; color: #999; justify-content: center; } /* 无数据 */
+.touchpoint-value { width: 72px; text-align: right; font-size: 13px; font-weight: 600; flex-shrink: 0; }
+/* ====== 标签 ====== */
+.tag-strong { background: #dc2626; color: #fff; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.tag-mid { background: #ea580c; color: #fff; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.tag-weak { background: #86868b; color: #fff; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.tag-blue { background: #2563eb; color: #fff; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.tag-green { background: #059669; color: #fff; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.tag-orange { background: #d97706; color: #fff; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+/* ====== 如翼截图 ====== */
+.ruyi-shot {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 18px 0;
+}
+.ruyi-shot img {
+  max-width: 100%;
+  border-radius: 6px;
+  cursor: zoom-in;
+  transition: transform 0.2s;
+}
+.ruyi-label {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  padding: 3px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.ruyi-path { font-size: 12px; color: #86868b; margin-left: 8px; }
+.ruyi-guide {
+  background: #fff;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.75;
+  color: #555;
+}
+.guide-title { font-weight: 700; color: #2563eb; }
+/* ====== Lightbox ====== */
+.lightbox-overlay {
+  display: none; position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.lightbox-overlay.active { display: flex; }
+.lightbox-close {
+  position: absolute; top: 20px; right: 30px;
+  font-size: 40px; color: #fff; cursor: pointer; z-index: 10000;
+}
+.lightbox-hint {
+  color: rgba(255,255,255,0.6); font-size: 14px; margin-top: 16px;
+}
+.lightbox-overlay img { max-width: 95vw; max-height: 90vh; border-radius: 8px; }
+/* ====== 达人/IP推荐表 ====== */
+.rec-table td { padding: 10px 12px; }
+.rec-rank {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px; border-radius: 50%;
+  font-size: 13px; font-weight: 700; color: #fff;
+}
+.rank-gold { background: linear-gradient(135deg,#ffd700,#ffaa00); }
+.rank-silver { background: linear-gradient(135deg,#c0c0c0,#a0a0a0); }
+.rank-bronze { background: linear-gradient(135deg,#cd7f32,#a0522d); }
+.rank-normal { background: #e8e8ed; color: #555; }
+.score-badge {
+  display: inline-block;
+  padding: 2px 8px; border-radius: 10px;
+  font-size: 12px; font-weight: 600;
+}
+.score-high { background: #dcfce7; color: #059669; }
+.score-mid { background: #fef3c7; color: #d97706; }
+.tgi-badge { 
+  display: inline-block; padding: 2px 8px; border-radius: 10px;
+  font-size: 12px; font-weight: 700; font-family: "SF Mono", monospace;
+}
+.tgi-high { background: #ede9fe; color: #7c3aed; }
+.tgi-mid { background: #dbeafe; color: #2563eb; }
+.status-live { color: #059669; font-weight: 600; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<!-- ========== LIGHTBOX ========== -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+<span class="lightbox-close">&times;</span>
+<img id="lightbox-img" src="" alt="放大查看">
+<div class="lightbox-hint">点击任意处 · 或按 Esc 关闭</div>
+</div>
+
+<div class="page">
+
+<!-- ========== 封面 ========== -->
+<div class="cover">
+<h1>多燕瘦 × 腾讯营销</h1>
+<div class="sub">2026 H2 种草作战方案 · 从效果竞价基本盘到品牌资产第二曲线</div>
+<div class="meta">数据周期：近 30 天（截至 2026-07-07） · 编制方：腾讯营销侧</div>
+</div>
+
+<!-- ========== 导读 ========== -->
+<div class="good-box">
+<strong style="font-size:15px;">📌 三个反差数据 · 一句话看懂多燕瘦在腾讯生态的现状</strong><br><br>
+<strong>反差①</strong>：总资产 <strong>1,850 万</strong>，品类渗透率 <strong>84.04%</strong>（高于行业均值）——多燕瘦在膳食品类的<strong>用户覆盖面已经很大</strong>。<br>
+<strong>反差②</strong>：效果竞价占比 <strong>96.62%</strong>（TGI 116），而<strong>互选 = 0%、品牌竞价 = 0%、合约推广 = 0%</strong>——所有触点都压在一条腿上。<br>
+<strong>反差③</strong>：R3 共鸣层仅 <strong>89.8 万</strong>人（占总资产 4.85%），R4 行动仅 <strong>1.94 万</strong>人，R5 信赖仅 <strong>1,913</strong>人——<strong>覆盖广但深度浅，用户"知道多燕瘦"但没到"认准多燕瘦"</strong>。<br><br>
+<strong>核心判断</strong>：多燕瘦的<strong>第一曲线（效果竞价+视频号）已经跑通且健康</strong>，但<strong>第二曲线（互选+品牌竞价+达人种草）完全空白</strong>。Q3 的核心任务不是推翻第一曲线，而是<strong>把第二曲线从 0 搭起来</strong>。
+</div>
+
+<!-- ========== PART 1 分页符 ========== -->
+<div class="page-break">
+<div class="icon">🔬</div>
+<h2>PART 01 · 现状诊断</h2>
+<div class="sub">用如翼后台真实数据还原多燕瘦在腾讯生态的全貌</div>
+</div>
+
+<!-- ========== 1.1 顶层大盘 ========== -->
+<div class="section-tag purple">1.1 顶层大盘 · 一图看完</div>
+<div class="h2 purple">1,850 万总资产 · 覆盖广但深度浅</div>
+
+<div class="metric-grid">
+<div class="metric-card m-blue metric-card-sm">
+<div class="metric-label">品牌总资产</div>
+<div class="metric-value">1,850 万</div>
+<div class="metric-desc">5 层合计（近 30 天）</div>
+</div>
+<div class="metric-card m-purple metric-card-sm">
+<div class="metric-label">品类渗透率</div>
+<div class="metric-value" style="color:#7c3aed;">84.04%</div>
+<div class="metric-desc">高于行业均值 ✅</div>
+</div>
+<div class="metric-card m-orange metric-card-sm">
+<div class="metric-label">R3 共鸣层</div>
+<div class="metric-value">89.8 万</div>
+<div class="metric-desc">占总资产 4.85% 🔴</div>
+</div>
+<div class="metric-card m-red metric-card-sm">
+<div class="metric-label">R4 行动层</div>
+<div class="metric-value" style="color:#dc2626;">1.94 万</div>
+<div class="metric-desc">转化层极薄 🔴</div>
+</div>
+</div>
+
+<!-- 5R 漏斗结构 -->
+<div class="ruyi-shot">
+<span class="ruyi-label">如翼后台原图</span><span class="ruyi-path">如翼旗舰版 › 品牌人群资产 › 品牌资产总览 + 触点分析 + 5R人群结构 · 近 30 天</span>
+<img src="数据截图/5R 资产总览-多燕瘦.png" alt="多燕瘦5R资产总览+触点分析全景">
+<div class="ruyi-guide">
+<span class="guide-title">📖 如何看懂这张全景图</span><br>
+① <strong>顶部「品牌资产」区域</strong>——5 列数字分别是 R1-R5 各层人数，最右侧是 R5 信赖层。多燕瘦的特点是 R1/R2 很大（1178万+570万），但 R3/R4/R5 急剧收窄（89.8万→1.94万→1913）。<br>
+② <strong>中间「触点分析」柱状图</strong>——每根柱子代表一个广告投放渠道的素材数量和目标人群浓度 TGI。效果竞价的蓝色柱几乎独占全宽，其他渠道接近为零。<br>
+③ <strong>下方「5R人群结构」对比</strong>——蓝色=本品牌，绿色=行业 TOP5 均值。可以看到多燕瘦在多个垂类上的覆盖与行业头部有差异。<br>
+④ <strong>重点看</strong>R3 只占总资产的 4.85%，以及效果竞价 96.62% 的绝对主导地位——这就是本方案要解决的两个核心问题。<br><br>
+<strong>💡 日常自查建议</strong>：每月登录如翼看一次这个页面，关注 R3 是否在增长、触点结构里互选占比是否从 0 开始有值。
+</div>
+</div>
+
+<!-- 5R 分层数据表 -->
+<div class="mini-chart">
+<div class="chart-title">5R 漏斗各层数据 · 近 30 天</div>
+<table>
+<thead><tr><th>层级</th><th style="text-align:right;">人数</th><th>占总资产</th><th>解读</th></tr></thead>
+<tbody>
+<tr><td><strong>R1 触达</strong></td><td class="num">11,781,763</td><td>63.68%</td><td>曝光触达层 · 已有巨大覆盖</td></tr>
+<tr><td><strong>R2 回应</strong></td><td class="num">5,701,554</td><td>30.82%</td><td>互动回应层 · 从触达到互动转化正常</td></tr>
+<tr><td><strong>R3 共鸣</strong></td><td class="num"><strong style="color:#7c3aed;">897,645</strong></td><td><strong style="color:#dc2626;">4.85% 🔴</strong></td><td>品牌心智层 · 占比过低，用户未建立强认知</td></tr>
+<tr><td><strong>R4 行动</strong></td><td class="num"><strong style="color:#dc2626;">19,368</strong></td><td>0.10%</td><td>购买行动层 · 极薄</td></tr>
+<tr><td><strong>R5 信赖</strong></td><td class="num"><strong style="color:#dc2626;">1,913</strong></td><td>0.01%</td><td>忠诚复购层 · 几乎没有</td></tr>
+<tr style="background:#f0f7ff;"><td><strong>合计</strong></td><td class="num"><strong>18,502,243</strong></td><td>100%</td><td>品类渗透率 84.04%（超均值）</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<!-- ========== 1.2 触点结构诊断 ========== -->
+<div class="section-tag red">1.2 触点结构 · 一条腿走路</div>
+<div class="h2 red">96.62% 效果竞价 · 第二曲线完全空白</div>
+
+<div class="touchpoint-bar" style="margin: 14px 0 0 0;">
+<div class="chart-title" style="margin-bottom:12px;">近 30 天触点消耗结构</div>
+<div class="touchpoint-row">
+<div class="touchpoint-label">效果竞价</div>
+<div class="touchpoint-track"><div class="touchpoint-fill fill-dominant" style="width: 96.62%;">96.62% · TGI 116</div></div>
+<div class="touchpoint-value" style="color:#2563eb;font-weight:700;">96.62%</div>
+</div>
+<div class="touchpoint-row">
+<div class="touchpoint-label">搜索投放 ROI</div>
+<div class="touchpoint-track"><div class="touchpoint-fill fill-zero" style="width: 8%;">0.69% · TGI 14</div></div>
+<div class="touchpoint-value">0.69%</div>
+</div>
+<div class="touchpoint-row">
+<div class="touchpoint-label">品牌阵地</div>
+<div class="touchpoint-track"><div class="touchpoint-fill fill-zero" style="width: 3%;">0.08%</div></div>
+<div class="touchpoint-value">0.08%</div>
+</div>
+<div class="touchpoint-row">
+<div class="touchpoint-label">自然搜索</div>
+<div class="touchpoint-track"><div class="touchpoint-fill fill-zero" style="width: 2%;">0.03%</div></div>
+<div class="touchpoint-value">0.03%</div>
+</div>
+<div class="touchpoint-row">
+<div class="touchpoint-label">互选</div>
+<div class="touchpoint-track"><div class="touchpoint-fill fill-zero" style="width: 1%;">0.00% · TGI —</div></div>
+<div class="touchpoint-value" style="color:#dc2626;">0.00% 🔴</div>
+</div>
+<div class="touchpoint-row">
+<div class="touchpoint-label">品牌竞价</div>
+<div class="touchpoint-track"><div class="touchpoint-fill fill-zero" style="width: 1%;">0.00% · TGI —</div></div>
+<div class="touchpoint-value" style="color:#dc2626;">0.00% 🔴</div>
+</div>
+<div class="touchpoint-row">
+<div class="touchpoint-label">合约推广</div>
+<div class="touchpoint-track"><div class="touchpoint-fill fill-zero" style="width: 1%;">0.00% · TGI —</div></div>
+<div class="touchpoint-value" style="color:#dc2626;">0.00% 🔴</div>
+</div>
+</div>
+
+<div class="insight-box">
+<div class="insight-title">💡 触点结构翻译一下</div>
+<div class="insight-content">
+多燕瘦在腾讯生态的所有投放中，<strong>96.62% 走的是效果竞价</strong>——这意味着每一分钱都在"买流量卖货"，没有任何预算分配给"做品牌心智"。<br><br>
+<strong>这不是说效果竞价不好</strong>——效果竞价 TGI 116 说明跑得比行业平均水平好，视频号版位已经有 94 条素材在投（TGI 241 是所有细分触点里最高的）。<br><br>
+<strong>问题在于：只有一条腿在走</strong>。互选（唯一能带 R3 品牌资产的版位）是 0，品牌竞价是 0，合约推广也是 0。多燕瘦的用户全部来自"流量顺路看到广告后下单"，没有一个用户是因为"看了某个达人的种草视频"或"被某个 IP 内容打动"而认识多燕瘦的。
+</div>
+</div>
+
+<!-- 效果竞价内部拆解 -->
+<div class="mini-chart">
+<div class="chart-title">效果竞价内部 · 版位分布（共 291 条素材）</div>
+<div class="chart-sub">数据源：如翼旗舰版 › 触点分析 · 近 30 天</div>
+<table>
+<thead><tr><th>版位</th><th style="text-align:right;">素材数</th><th style="text-align:right;">TGI</th><th>解读</th></tr></thead>
+<tbody>
+<tr style="background:#eff6ff;">
+<td><strong>微信视频号</strong></td><td class="num"><strong>94</strong></td><td class="num" style="color:#2563eb;"><strong>241 ⭐</strong></td><td>最高效版位 · 已在用</td>
+</tr>
+<tr>
+<td><strong>微信公众号</strong></td><td class="num">79</td><td class="num">75</td><td>次高效 · 公众号文章带货</td>
+</tr>
+<tr>
+<td><strong>腾讯新闻</strong></td><td class="num">47</td><td class="num">73</td><td>信息流原生</td>
+</tr>
+<tr>
+<td><strong>微信朋友圈</strong></td><td class="num">11</td><td class="num">40</td><td>社交场景</td>
+</tr>
+<tr>
+<td>QQ / 优量汇 / 看一看 / 浏览器</td><td class="num">14</td><td class="num">—</td><td>长尾补充</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="good-box" style="border-left-color: #059669;">
+<strong>✅ 正向发现</strong>：视频号版位 TGI 241 是所有触点里最高的——说明多燕瘦在视频号的素材效率远超行业平均。Q3 启动第二曲线时，<strong>视频号就是天然主场</strong>，不需要从零学起。
+</div>
+
+
+<!-- ========== 1.3 30天流转能力 ========== -->
+<div class="section-tag blue">1.3 30天流转能力 · 三段数据</div>
+<div class="h2 blue">拉新规模大 · 但种草和转化段需要补强</div>
+
+<div class="ruyi-shot">
+<span class="ruyi-label">如翼后台原图</span><span class="ruyi-path">如翼旗舰版 › 品牌人群资产 › 流转关系 · 近 30 天（桑基流转 + 触点分析）</span>
+<img src="数据截图/层间流转率（拉新:蓄水:种草）及触点分析-多燕瘦.png" alt="多燕瘦30天层间流转率+桑基流转">
+<div class="ruyi-guide">
+<span class="guide-title">📖 如何看懂这张流转关系图</span><br>
+① <strong>顶部三个指标卡片</strong>——拉新（外部新客进来）、蓄水（变成 R1/R2）、种草（变成 R3 共鸣）。每个卡片显示绝对人数和"低于/高于行业 TOP5 均值的比例"。<br>
+② <strong>中间桑基色带</strong>——每一条带代表一群人在 30 天内的迁移路径。色带越粗 = 这条路径上的人越多。左侧是期初状态，右侧是期末状态。<br>
+③ <strong>右下角「触点分析」</strong>——这张图的触点分析聚焦在"种草段"（非5R/R1/R2 到 R3），可以看清楚到底是谁在帮多燕瘦完成种草。<br>
+④ <strong>重点看</strong>：拉新 1125 万（规模大）、种草仅 86.3 万（效率低）、效果竞价 96.62% 主导种草段。<br><br>
+<strong>💡 日常自查建议</strong>：每月看一次"种草"数字是否在增长——如果连续 3 个月种草人数不变或下降，说明第一曲线的效果竞价边际效益在衰减，必须启动第二曲线。
+</div>
+</div>
+
+<!-- 三段流转数据表 -->
+<div class="metric-grid">
+<div class="metric-card m-blue metric-card-sm">
+<div class="metric-label">拉新（非5R→5R）</div>
+<div class="metric-value">1,125 万</div>
+<div class="metric-desc">低于 TOP5 均值 76.21% · 规模够大</div>
+</div>
+<div class="metric-card m-purple metric-card-sm">
+<div class="metric-label">蓄水（非5R→R1R2）</div>
+<div class="metric-value">1,048 万</div>
+<div class="metric-desc">低于 TOP5 均值 75.28% · 转化为 R1R2 正常</div>
+</div>
+<div class="metric-card m-orange metric-card-sm">
+<div class="metric-label">种草（→R3）</div>
+<div class="metric-value">86.3 万</div>
+<div class="metric-desc">低于 TOP5 均值 92.36% · 最需补强</div>
+</div>
+<div class="metric-card m-red metric-card-sm">
+<div class="metric-label">R3→R4 转化</div>
+<div class="metric-value">11,394 人</div>
+<div class="metric-desc">R3→R4 流转人数 · 转化率待提升</div>
+</div>
+</div>
+
+<div class="warn-box">
+<strong>关键事实</strong>：多燕瘦 30 天拉新 1,125 万人（规模可观），但最终能沉淀为 R3 共鸣层的只有 86.3 万（仅 7.7% 的拉新转化为 R3）。这 86.3 万人里再往下走到 R4 购买的只有 11,394 人。<br>
+<strong>漏斗收口太急</strong>——从 1,125 万拉新到 1.94 万 R4，中间流失了 99.8%。第二曲线的核心价值就是在 R1→R3 和 R3→R4 两段补上"品牌信任"的转化杠杆。
+</div>
+
+
+<!-- ========== 1.4 综合诊断收口 · 核心战略课题 ========== -->
+<div class="section-tag red">1.4 核心战略课题</div>
+<div class="h2 red">第一曲线强且单一 · 第二曲线完全空白</div>
+
+<div class="quote-box">
+<strong>核心战略课题</strong>：<br><br>
+多燕瘦在腾讯生态的<strong>第一曲线（效果竞价 + 视频号）已经跑通</strong>——1,850 万总资产、84.02% 品类渗透率、96.62% 效果竞价 TGI 116、视频号 94 条素材 TGI 241。<strong>这些数字说明多燕瘦在"花钱买流量卖货"这件事上做得很好。</strong><br><br>
+但多燕瘦的<strong>第二曲线（互选 + 品牌竞价 + 达人种草 + 品牌内容）完全空白</strong>——互选 0%、品牌竞价 0%、合约 0%。所有 1,850 万用户都来自"效果竞价顺路触达"，没有一个用户是因为"被某个达人的种草视频打动"或"被某个 IP 内容影响"而认识多燕瘦的。<br><br>
+<strong>R3 仅 89.8 万（4.85%）+ R4 仅 1.94 万 + R5 仅 1,913</strong>——这三个数字说明同一件事：<strong>用户"知道多燕瘦"但没有"认准多燕瘦"。</strong>一旦竞品出更低价的素材或者加大投放，多燕瘦的 R1/R2 池子里的用户随时可能被抢走——因为没有品牌心智护城河。<br><br>
+<strong>Q3 的答案不是推翻第一曲线，是把第二曲线从 0 搭起来。</strong>
+</div>
+
+<!-- 双轨对照表 -->
+<div class="mini-chart">
+<div class="chart-title">双轨对照 · 第一曲线 vs 第二曲线</div>
+<table>
+<thead><tr><th>维度</th><th style="background:#fff5f5;">第一曲线（现状·已跑通）</th><th style="background:#f0fff4;">第二曲线（Q3·从0启动）</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>核心触点</strong></td>
+<td>效果竞价 96.62%（视频号 TGI 241）</td>
+<td>互选 + 品牌竞价 + 达人内容</td>
+</tr>
+<tr>
+<td><strong>用户记忆方式</strong></td>
+<td>"刷到广告 → 下单"（流量驱动）</td>
+<td>"看达人种草 → 认知品牌 → 下单"（心智驱动）</td>
+</tr>
+<tr>
+<td><strong>R3 来源</strong></td>
+<td>效果竞价顺路带（无品牌属性）</td>
+<td>互选/达人种草（带品牌属性）</td>
+</tr>
+<tr>
+<td><strong>R4 转化动力</strong></td>
+<td>价格/促销/货补（容易被抢）</td>
+<td>品牌信任 + 达人背书（有护城河）</td>
+</tr>
+<tr>
+<td><strong>当前状态</strong></td>
+<td style="color:#059669;">✅ 健康 · TGI 116</td>
+<td style="color:#dc2626;">🔴 完全空白 · 0%</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+<!-- ========== PART 2 分页符 ========== -->
+<div class="page-break">
+<div class="icon">🚀</div>
+<h2>PART 02 · Q3 建议</h2>
+<div class="sub">用如翼工具把第二曲线从 0 搭起来</div>
+</div>
+
+<!-- ========== 2.1 服务定位升级 ========== -->
+<div class="section-tag green">2.1 服务定位升级</div>
+<div class="h2 green">从"跑投放"到"搭系统" · 陪多燕瘦建品牌资产飞轮</div>
+
+<div class="insight-box" style="border-left-color:#059669;background:#f0fff4;">
+<div class="insight-title" style="color:#059669;">💡 服务定位双层结构</div>
+<div class="insight-content">
+Q3 腾讯营销侧的服务定位分成两层：<br>
+① <strong>上层 · 第二曲线搭建</strong>——围绕"互选启动 + 达人选号 + IP 探索 + 品牌内容"四个动作，这是 Q3 品牌资产的净增量所在；<br>
+② <strong>下层 · 第一曲线优化</strong>——围绕现有 291 条效果竞价素材的效率优化、视频号版位进一步放大、搜索投放 ROI 提升，保规模、稳大盘。<br><br>
+上层第二曲线是<strong>让"知道多燕瘦"变成"认准多燕瘦"</strong>的战略动作，下层第一曲线是<strong>让已有的 1,850 万覆盖继续健康运转</strong>的战术动作——两层同时起手。
+</div>
+</div>
+
+
+<!-- ========== 2.2 Q3 建议动作矩阵 ========== -->
+<div class="section-tag green">2.2 Q3 建议动作矩阵</div>
+<div class="h2 green">5 个动作 · 从 0 到 1 搭第二曲线</div>
+
+<!-- 动作① -->
+<div class="action-card" style="border-left: 4px solid #7c3aed;">
+<div style="margin-bottom: 8px;"><span class="action-num" style="background: #7c3aed;">1</span><span class="action-title">互选首场启动 · 从 0 到 1</span> <span class="tag-strong">P0 · 14 天见效</span></div>
+<p><strong>为什么</strong>：互选是目前如翼体系里<strong>唯一能给品牌带 R3 品牌资产</strong>的版位。多燕瘦当前互选 = 0%，意味着所有 R3 都来自效果竞价（无品牌属性）。</p>
+<p><strong>怎么做</strong>：</p>
+<ul style="padding-left:20px;font-size:14px;line-height:1.8;">
+<li><strong>P0 立即</strong>：从如翼 R4 高渗透达人列表（见本章 2.3）里筛选 3-5 个与多燕瘦调性匹配的腰部达人，启动首批互选合作</li>
+<li>单场互选预算建议 5-15 万（视达人量级），Q3 目标做 2-3 场</li>
+<li>互选内容方向：减脂/身材管理/健康生活（匹配 R3 用户画像的女性/情感/家庭向偏好）</li>
+</ul>
+<div class="tip-box"><strong>预期效果</strong>：互选占比从 0% → 目标 3-5%（第一阶段）；R3 中来自互选的比例从 0% → 有值；产出首批可复用的种草素材。</div>
+</div>
+
+<!-- 动作② -->
+<div class="action-card" style="border-left: 4px solid #7c3aed;">
+<div style="margin-bottom: 8px;"><span class="action-num" style="background: #7c3aed;">2</span><span class="action-title">达人短名单 · 用翼红人反推 + R4 高渗透交叉验证</span> <span class="tag-strong">P0 · 14 天见效</span></div>
+<p><strong>为什么</strong>：客户一直在追问"哪些达人适合多燕瘦"。如翼翼红人模块可以直接回答这个问题。</p>
+<p><strong>怎么做</strong>：</p>
+<ul style="padding-left:20px;font-size:14px;line-height:1.8;">
+<li><strong>第一步</strong>：用如翼「品牌 R4 高渗透达人 list」（见 2.3 章节）——这是<strong>已经对多燕瘦产生过转化行为</strong>的达人名单，是最精准的"已验证池"</li>
+<li><strong>第二步</strong>：用翼红人工具基于 68 万 R3 人群画像反推相似达人——这是<strong>破圈拓新</strong>的候选池</li>
+<li><strong>第三步</strong>：两份名单交叉 → 产出"既有转化验证又有破圈潜力"的首批合作短名单（建议 10-15 个）</li>
+<li>按粉丝量级分层：头部（保 GMV）/ 腰部（补 R3） / 垂类（精准人群）</li>
+</ul>
+<div class="tip-box"><strong>预期效果</strong>：产出一份多燕瘦专属达人合作短名单（含每个达人的 R4 渗透率/TGI/频道/评分），客户可以直接用于商务对接。</div>
+</div>
+
+<!-- 动作③ -->
+<div class="action-card" style="border-left: 4px solid #059669;">
+<div style="margin-bottom: 8px;"><span class="action-num" style="background: #059669;">3</span><span class="action-title">IP 合作探索 · 用钜如翼反推节目匹配</span> <span class="tag-mid">P1 · Q3 打基础</span></div>
+<p><strong>为什么</strong>：多燕瘦 R3 人群（68 万）的内容偏好高度集中在<strong>电视剧/电影/综艺</strong>赛道（63%/52%/43%），尤其是爱情/古装/都市/家庭/传奇细分类目（TGI 110-163）。钜如翼可以基于这些偏好反推最匹配的视频号 IP 节目。</p>
+<p><strong>怎么做</strong>：</p>
+<ul style="padding-left:20px;font-size:14px;line-height:1.8;">
+<li>用钜如翼「品牌 5R 高渗透率节目 list」（见 2.4 章节）——如翼已自动排序出 5,804 个匹配节目</li>
+<li>Top 推荐优先评估：<strong>莫离</strong>（TGI200/目标人群23.38%）、<strong>主角</strong>（TGI199/14.98%）、<strong>迷墙</strong>（TGI212/12.34%）——均为电视剧/都市/古装/剧情类热播IP</li>
+<li>合作形式评估：IP 冠名 / 剧集植入 / 达人联动专场 / 品牌定制短内容</li>
+</ul>
+<div class="tip-box"><strong>预期效果</strong>：锁定 2-3 个最适合多燕瘦调性的 IP 节目进入商务评估阶段。不强制 Q3 必须签约，目标是"从知道有哪些可选到做出选择"。</div>
+</div>
+
+<!-- 动作④ -->
+<div class="action-card" style="border-left: 4px solid #059669;">
+<div style="margin-bottom: 8px;"><span class="action-num" style="background: #059669;">4</span><span class="action-title">品牌号内容启动 · 视频号 + 公众号双线</span> <span class="tag-mid">P1 · Q3 打基础</span></div>
+<p><strong>为什么</strong>：R3 用户的媒体偏好 TGI 显示<strong>视频号（TGI 154 在同类品牌中偏高）+ 亲情/家庭/都市情感内容</strong>是多燕瘦用户的天然主场。品牌号内容不需要"硬核减肥科普"路线，走"女性向/情感向/生活方式"路线反而更贴合用户画像。</p>
+<p><strong>怎么做</strong>：</p>
+<ul style="padding-left:20px;font-size:14px;line-height:1.8;">
+<li>视频号品牌号：从 0 启动，Q3 目标周更 2-3 条（减脂日常/身材管理故事/用户蜕变案例）</li>
+<li>公众号：配合视频号做深度图文，承接搜索流量（自然搜索目前仅 0.03%）</li>
+<li>内容调性参考 R3 画像偏好：女性视角 > 情感叙事 > 家庭场景 > 减肥是背景不是主角</li>
+</ul>
+<div class="tip-box"><strong>预期效果</strong>：视频号品牌号从 0 到稳定更新；公众号承接搜索流量从 0.03% 有提升；积累第一批品牌自有内容资产。</div>
+</div>
+
+<!-- 动作⑤ -->
+<div class="action-card" style="border-left: 4px solid #ea580c;">
+<div style="margin-bottom: 8px;"><span class="action-num" style="background: #ea580c;">5</span><span class="action-title">AI 智选跑人群包 · 为大场做准备</span> <span class="tag-weak">P2 · Q3 打基础</span></div>
+<p><strong>做法</strong>：基于 68 万 R3 人群画像，用 AI 智选水晶球跑一轮"相似人群拓圈"——输出 3 个人群包，为大场投放做准备。</p>
+<p><strong>注意限制</strong>（事先说明）：AI 智选不支持年龄性别定向 / 不能与其他机会人群叠加 / 智能定向下看不到智选人群。</p>
+<div class="tip-box"><strong>预期效果</strong>：产出 3 个可投放的人群包 + 8-10 维度洞察报告（音乐/媒体/达人/明星/长视频/新闻/推荐/共鸣），为大场前 4-6 周蓄水做准备。</div>
+</div>
+
+
+<!-- ========== 2.3 达人推荐 · R4 高渗透达人列表 ========== -->
+<div class="section-tag purple">2.3 达人推荐 · R4 高渗透短名单</div>
+<div class="h2 purple">如翼自动生成的"已转化验证"达人池</div>
+
+<div class="ruyi-shot">
+<span class="ruyi-label">如翼后台原图</span><span class="ruyi-path">如翼旗舰版 › 人群列表 › 品牌 R4 高渗透率达人 list</span>
+<img src="数据截图/品牌R4高渗透率达人list.png" alt="多燕瘦R4高渗透达人列表">
+<div class="ruyi-guide">
+<span class="guide-title">📖 如何看懂这张达人列表</span><br>
+① <strong>这是什么表</strong>——如翼自动计算的"与多燕瘦 R4（已购买行动）人群重合度最高"的视频号达人排行。这些达人的粉丝里，有较高比例的人已经是多燕瘦的购买用户。<br>
+② <strong>为什么重要</strong>——R4 渗透率高 = 这个达人的粉丝和多燕瘦的<strong>实际买家高度重叠</strong>。跟这类达人做互选，转化效率会远高于随机选号。<br>
+③ <strong>怎么看每行</strong>：头像+昵名 / 粉丝数 / 目标人群占比（粉丝里有多少是多燕瘦R4用户） / TGI（与行业均值对比倍数） / 频道（达人内容类型） / 评分 / 播放状态 / 备案信息。<br>
+④ <strong>重点看</strong>：目标人群占比和 TGI 两个数字——占比越高、TGI 越高，越适合作为首批互选合作对象。<br><br>
+<strong>💡 使用建议</strong>：从这份列表里按"减肥/健身/美妆/生活方式"频道筛选，取 Top 10-15 作为首批互选商务对接短名单。同时用翼红人再做一次反向验证（输入多燕瘦 brief → 反推达人），两份名单交叉后最终确定。
+</div>
+</div>
+
+<div class="insight-box">
+<div class="insight-title">💡 客户追问"哪些达人适合我"的标准回答</div>
+<div class="insight-content">
+腾讯营销侧通过如翼工具给到两份达人名单：<br>
+① <strong>R4 高渗透达人 list</strong>（本页展示）——"已经买过多燕瘦的人也在关注这些达人"<br>
+② <strong>翼红人反推达人 list</strong>（AI 智选生成）——"和多燕瘦 R3 人群画像最相似的达人"<br>
+两份名单交叉后产出的<strong>短名单</strong>就是"既有多燕瘦买家验证又有破圈潜力"的最优解。<br><br>
+<strong>最终拍板权在多燕瘦品牌方</strong>——腾讯营销侧交付选号能力，不替代品牌的商务决策。
+</div>
+</div>
+
+
+<!-- ========== 2.4 IP 节目推荐 · 钜如翼反推 ========== -->
+<div class="section-tag purple">2.4 IP 节目推荐 · 钜如翼自动匹配</div>
+<div class="h2 purple">基于 68 万 R3 人群画像 · 自动排序 5,804 个节目</div>
+
+<div class="ruyi-shot">
+<span class="ruyi-label">如翼后台原图</span><span class="ruyi-path">如翼旗舰版 › 人群列表 › 品牌 5R 高渗透率节目 list · 总目标人群：品牌R3洞察 · 68万人</span>
+<img src="数据截图/品牌5R高渗透率节目list.png" alt="多燕瘦R3高渗透率IP节目推荐">
+<div class="ruyi-guide">
+<span class="guide-title">📖 如何看懂这张 IP 节目推荐表</span><br>
+① <strong>顶部</strong>——总目标人群 = 68 万（多燕瘦的 R3 共鸣层用户）。钜如翼基于这 68 万人的内容偏好，反推出最匹配的视频号 IP 节目。<br>
+② <strong>频道匹配分析</strong>——上半部分是频道级偏好（电视剧/电影/综艺/动漫/少儿/纪录片/体育），每个频道显示 TGI 和目标人群占比。多燕瘦 R3 用户最偏好的是<strong>电视剧（63.17%, TGI120）</strong>。<br>
+③ <strong>二级频道</strong>——以电视剧为例展开的细分类目：爱情(71.57%) > 古装(49.42%) > 都市(42.35%) > 悬疑 > 家庭(19.65%, TGI163最高) > 传奇(159) > 剧情。<br>
+④ <strong>IP 匹配推荐表格</strong>——下半部分是具体节目推荐，每行包含：综合推荐值 / 目标人群占比 / TGI / 频道 / 评分 / 播放状态 / 主演/导演 / 播出时间。<br>
+⑤ <strong>重点看 Top 行</strong>：莫离(TGI200)、主角(TGI199)、迷墙(TGI212)——这三个 IP 与多燕瘦 R3 人群的重合度最高。<br><br>
+<strong>💡 使用建议</strong>：这张表不是"必须合作的清单"，而是"值得评估的候选池"。建议从中筛选 2-3 个调性匹配（都市/情感/女性向）、播出时间合适（Q3 在播或即将开播）、商务条件可谈的 IP 进入深入评估。
+</div>
+</div>
+
+<!-- R3 用户画像总结 -->
+<div class="mini-chart">
+<div class="chart-title">多燕瘦 R3 人群（68 万）内容偏好画像 · 钜如翼自动分析</div>
+<div class="chart-sub">数据源：如翼旗舰版 › 品牌 5R 高渗透率节目 list</div>
+<table>
+<thead><tr><th>维度</th><th>偏好</th><th>TGI</th><th>目标人群占比</th><th>Q3 内容策略含义</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>一级频道</strong></td><td><strong style="color:#2563eb;">电视剧</strong></td>
+<td>120</td>
+<td style="color:#2563eb;font-weight:700;">63.17%</td>
+<td>主战场 · IP 合作首选赛道</td>
+</tr>
+<tr>
+<td></td>
+<td>电影</td>
+<td>116</td>
+<td>51.90%</td>
+<td>次战场 · 影视综合作可覆盖</td>
+</tr>
+<tr>
+<td></td>
+<td>综艺</td>
+<td>110</td>
+<td>42.81%</td>
+<td>综艺植入/达人联动</td>
+</tr>
+<tr>
+<td></td>
+<td>少儿</td>
+<td><strong style="color:#7c3aed;">124</strong></td>
+<td>17.70%</td>
+<td>亲子/妈妈人群 · 可拓展方向</td>
+</tr>
+<tr>
+<td></td>
+<td>纪录片</td>
+<td><strong style="color:#7c3aed;">158</strong></td>
+<td>10.91%</td>
+<td>知识型内容 · 品牌号选题参考</td>
+</tr>
+<tr style="background:#f0f7ff;">
+<td><strong>二级频道（电视剧内）</strong></td><td colspan="4" style="text-align:center;">↓ 细分偏好（TGI越高=越独特）</td>
+</tr>
+<tr>
+<td></td>
+<td>爱情</td>
+<td>110</td>
+<td style="color:#2563eb;">71.57%</td>
+<td>情感叙事 · 最受欢迎</td>
+</tr>
+<tr>
+<td></td>
+<td>都市</td>
+<td><strong style="color:#7c3aed;">141</strong></td>
+<td>42.35%</td>
+<td>TGI最高 · 都市女性向</td>
+</tr>
+<tr>
+<td></td>
+<td>家庭</td>
+<td><strong style="color:#7c3aed;">163</strong></td>
+<td>19.65%</td>
+<td>TGI第2高 · 妈妈人群</td>
+</tr>
+<tr>
+<td></td>
+<td>古装</td>
+<td>116</td>
+<td>49.42%</td>
+<td>古装剧植入机会</td>
+</tr>
+<tr>
+<td></td>
+<td>传奇</td>
+<td><strong style="color:#7c3aed;">159</strong></td>
+<td>18.67%</td>
+<td>传奇/传记类内容</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="good-box">
+<strong>✅ R3 画像对 Q3 内容方向的指导意义</strong>：<br>
+多燕瘦 R3 用户不是"硬核减肥科技党"，而是<strong>喜欢看电视剧/电影/综艺的女性用户</strong>，尤其偏好爱情/都市/家庭/传奇类内容。这意味着：<br>
+① 品牌号内容不要走"成分党/硬核科普"路线，走<strong>"女性视角的情感叙事 + 身材管理生活方式"</strong>路线更贴合<br>
+② 互选达人优先选<strong>女性向/生活方式/情感类</strong>博主而非纯健身教练<br>
+③ IP 合作优先考虑<strong>电视剧/都市/爱情</strong>类节目植入而非硬核体育/科技节目
+</div>
+
+<!-- Top IP 推荐精简表 -->
+<div class="mini-chart">
+<div class="chart-title">钜如翼 Top IP 推荐精选（前 10 · 基于综合推荐值排序）</div>
+<div class="chart-sub">完整列表共 5,804 条记录 · 此处展示 Top 10 供快速评估</div>
+<table class="rec-table">
+<thead><tr><th>#</th><th>节目名</th><th>综合推荐值</th><th>目标人群占比</th><th>TGI</th><th>频道</th><th>评分</th><th>状态</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="rec-rank rank-gold">1</span></td>
+<td><strong>莫离</strong></td>
+<td class="num">11,183</td>
+<td class="num" style="color:#2563eb;"><strong>23.38%</strong></td>
+<td><span class="tgi-badge tgi-high">200</span></td>
+<td>电视剧/剧情</td>
+<td><span class="score-badge score-high">93.1</span></td>
+<td class="status-live">热播中</td>
+</tr>
+<tr>
+<td><span class="rec-rank rank-silver">2</span></td>
+<td><strong>主角</strong></td>
+<td class="num">7,913</td>
+<td class="num" style="color:#2563eb;"><strong>14.98%</strong></td>
+<td><span class="tgi-badge tgi-high">199</span></td>
+<td>电视剧/剧情</td>
+<td><span class="score-badge score-high">86.0</span></td>
+<td class="status-live">热播中</td>
+</tr>
+<tr>
+<td><span class="rec-rank rank-bronze">3</span></td>
+<td><strong>迷墙</strong></td>
+<td class="num">7,499</td>
+<td class="num" style="color:#2563eb;">12.34%</td>
+<td><span class="tgi-badge tgi-high">212</span></td>
+<td>电视剧/都市</td>
+<td><span class="score-badge score-high">90.7</span></td>
+<td class="status-live">热播中</td>
+</tr>
+<tr>
+<td><span class="rec-rank rank-normal">4</span></td>
+<td><strong>罗生录</strong></td>
+<td class="num">7,546</td>
+<td class="num">13.16%</td>
+<td><span class="tgi-badge tgi-high">196</span></td>
+<td>电视剧/古装</td>
+<td><span class="score-badge score-high">92.3</span></td>
+<td class="status-live">热播中</td>
+</tr>
+<tr>
+<td><span class="rec-rank rank-normal">5</span></td>
+<td><strong>花开如梦</strong></td>
+<td class="num">7,688</td>
+<td class="num">0.35%</td>
+<td><span class="tgi-badge tgi-mid">505</span></td>
+<td>电视剧/剧情</td>
+<td><span class="score-badge score-mid">79.6</span></td>
+<td class="status-live">热播中</td>
+</tr>
+<tr>
+<td><span class="rec-rank rank-normal">6</span></td>
+<td><strong>西汉皇后传</strong></td>
+<td class="num">10,618</td>
+<td class="num">0.81%</td>
+<td><span class="tgi-badge tgi-mid">689</span></td>
+<td>纪录片/历史</td>
+<td><span class="score-badge score-high">91.3</span></td>
+<td class="status-live">热播中</td>
+</tr>
+<tr>
+<td><span class="rec-rank rank-normal">7</span></td>
+<td><strong>向阳花(郑女王)</strong></td>
+<td class="num">7,464</td>
+<td class="num">0.11%</td>
+<td><span class="tgi-badge tgi-mid">405</span></td>
+<td>电视剧/古装</td>
+<td><span class="score-badge score-mid">83.5</span></td>
+<td>—</td>
+</tr>
+<tr>
+<td><span class="rec-rank rank-normal">8</span></td>
+<td><strong>大婚公主传</strong></td>
+<td class="num">7,446</td>
+<td class="num">0.09%</td>
+<td><span class="tgi-badge tgi-mid">495</span></td>
+<td>纪录片/历史</td>
+<td><span class="score-badge score-high">90.6</span></td>
+<td>—</td>
+</tr>
+<tr>
+<td><span class="rec-rank rank-normal">9</span></td>
+<td><strong>像我有你一日·第9季</strong></td>
+<td class="num">92.77</td>
+<td class="num">0.02%</td>
+<td><span class="tgi-badge tgi-mid">618</span></td>
+<td>纪录片/人物</td>
+<td><span class="score-badge score-high">94.5</span></td>
+<td class="status-live">热播中</td>
+</tr>
+<tr>
+<td><span class="rec-rank rank-normal">10</span></td>
+<td><strong>像你有你一日·第9季</strong></td>
+<td class="num">86.98</td>
+<td class="num">0.83%</td>
+<td><span class="tgi-badge tgi-mid">579</span></td>
+<td>纪录片/八物</td>
+<td><span class="score-badge score-high">94.1</span></td>
+<td class="status-live">热播中</td>
+</tr>
+</tbody>
+</table>
+<div class="tip-box" style="margin-top:10px;">
+<strong>筛选建议</strong>：优先评估排名 1-4（莫离/主角/迷墙/罗生录）——这 4 个 IP 的目标人群占比 >10% 且 TGI >190，与多燕瘦 R3 用户重合度最高。排名 5-10 的 IP 虽然 TGI 更高但目标人群占比偏低，可作为备选。
+</div>
+</div>
+
+
+<!-- ========== 2.5 Q3 节奏图 ========== -->
+<div class="section-tag green">2.5 Q3 节奏 · 三段式飞轮</div>
+<div class="h2 green">种草前置 → 加热预约 → 转化收割</div>
+
+<div class="mini-chart">
+<div class="chart-title">Q3 三段节奏规划</div>
+<table>
+<thead><tr><th>阶段</th><th>时间</th><th>核心动作</th><th>对应第二曲线动作</th></tr></thead>
+<tbody>
+<tr>
+<td rowspan="2"><strong>前置蓄水</strong><br>4-6 周</td>
+<td>7 月上旬</td>
+<td>如翼 AI 智选跑人群包 + 钜如翼筛 IP + 翼红人筛达人</td>
+<td>动作⑤ + 动作③ + 动作②</td>
+</tr>
+<tr>
+<td>7 月中下旬</td>
+<td>首批互选达人商务对接 + 品牌号内容启动</td>
+<td>动作① + 动作④</td>
+</tr>
+<tr>
+<td><strong>加热预约</strong><br>1-2 周</td>
+<td>8 月</td>
+<td>互选内容上线 + ADQ 承接预约流量 + IP 合作落地（如有）</td>
+<td>动作① + 动作③</td>
+</tr>
+<tr>
+<td><strong>转化收割</strong><br>持续</td>
+<td>8-9 月</td>
+<td>大场/自播/达播集中转化 + 5 节点复盘</td>
+<td>全动作协同</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="quote-box" style="background:linear-gradient(135deg,#dcfce7 0%,#ffffff 100%);border-color:#059669;">
+<strong>核心结论 · 多燕瘦的 Q3 飞轮</strong><br><br>
+多燕瘦不需要"三支柱全部起手"的重型打法——<strong>多燕瘦 Q3 只需要做好一件事：让第二曲线从 0 变成 1</strong>。<br><br>
+互选从 0% 到有值、品牌号从 0 到有内容、达人短名单从无到有——这三个"从 0 到 1"就是 Q3 的全部 KPI。<br><br>
+<strong>体量领先的客户才打三支柱战役，多燕瘦打的是"启动战"——把飞轮转起来比把飞轮转得快更重要。</strong>
+</div>
+
+
+</div><!-- end page -->
+
+<!-- ========== Lightbox JS ========== -->
+<script>
+(function() {
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightbox-img');
+  var imgs = document.querySelectorAll('.ruyi-shot img');
+  imgs.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.stopPropagation();
+      lbImg.src = img.src; lbImg.alt = img.alt || '放大查看';
+      lb.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lb.classList.contains('active')) closeLightbox();
+  });
+})();
+function closeLightbox() {
+  var lb = document.getElementById('lightbox');
+  lb.classList.remove('active');
+  document.body.style.overflow = '';
+}
+</script>
+
+</body>
+</html>
